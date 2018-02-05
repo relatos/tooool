@@ -108,7 +108,7 @@ body { background-color: #f3f6f8; }
 .main-item .list li a { position: relative; display: block; height: 96px; padding: 12px; border: 1px solid #e0e0e0; border-radius: 4px; }
 .main-item .list li a:hover { -webkit-transition: all .3s ease; transition: all .3s ease; -webkit-transform: translateY(-4px); transform: translateY(-4px); -webkit-box-shadow: 0 0 2px #e0e0e0; box-shadow: 0 0 4px #e0e0e0; }
 .main-item .list .title { font-size: 14px; line-height: 40px; overflow: hidden; height: 40px; white-space: nowrap; text-overflow: ellipsis; color: #3273dc; }
-.main-item .list .title img { float: left; width: 40px; height: 40px; margin-right: 8px; }
+.main-item .list .title img { float: left; width: auto; height: 40px; margin-right: 8px; }
 .main-item .list .desc { line-height: 24px; padding-top: 8px; color: #686868; }
 @media (max-width:576px) {
   .main-item .list li { width: 98%; }
