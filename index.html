@@ -1,327 +1,573 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <title>让一切变得有趣</title>
-  <link rel="icon" type="image/png" href="img/t.png" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-  <meta name="description" content="一个程序员的导航网站，主要包含著名的技术博客、技术常用工具、技术公众号、技术社区论坛等。"/>
-  <meta name="keywords" content="技术, 博客, 工具，程序员，导航，技术公号"/>
-  <link rel="stylesheet" href="css/style.css"></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.amz123.com">
+    <meta name="description" content="Tooool导航是一个致力于服务中国程序员从业者的综合平台，以让程序员更便捷为使命，始终围绕程序员需求，为程序员提供最新工具">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>程序员-一站式导航网站</title>
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+    <link rel="icon" sizes="32x32" href="static/img/favicon.ico">
+    <link rel="Bookmark" href="static/img/favicon.ico">
+
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/bootstrap-bbs.css">
+    <link rel="stylesheet" href="static/css/newIndex.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/quanxin_new_1.css">
+    <link rel="stylesheet" href="static/css/font_1004935_lk27j4etgh.css">
+    <link rel="stylesheet" href="static/css/font_1182862_riuhh3xpvus.css">
+
+    
+</head>
 <body>
-  <header id="header">
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark" id="header">
     <div class="container">
-      <h2 class="logo">
-        <a target="_blank" href="http://tooool.org/">
-          <img src="img/logo.png" alt="">tooool</a>
-      </h2>
-      <nav id="nav" class="nav">
-        <ul>
-          <li>
-            <a target="_blank" href="javascript:void(0);" data-for="community">社区</a>
-          </li>
-          <li>
-            <a target="_blank" href="javascript:void(0);" data-for="tool">工具</a>
-          </li>
-          <li>
-            <a target="_blank" href="javascript:void(0);" data-for="blog">博客</a>
-          </li>
-          <li>
-            <a target="_blank" href="javascript:void(0);" data-for="other">其它</a>
-          </li>
-        </ul>
-      </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbar_collapse" aria-expanded="false" aria-label="展开菜单">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-truncate" href="/">Tooool
+<!--             <img src="static/img/logo.png" class="logo-2" id="amzlogo" alt="Tooool程序员一键式导航">
+ -->    </a>
+  <!--       <div class="d-none d-lg-block">
+        <span class="g-popover g-popover--light" style="display: none;">
+            <div class="gdd-favorite-guide gdd-favorite-guide__dark" style="top: 16px; width: 318px;">
+                <div class="gdd-favorite-guide__arrow">
+                    <div class="gdd-favorite-guide__arrow--stem"></div>
+                    <div class="gdd-favorite-guide__arrow--head"></div>
+                </div>
+                <div class="gdd-favorite-guide__content">
+                       拖动LOGO到书签栏, 立即收藏TOOOOL
+                </div>
+            </div>
+        </span>
+        </div> -->
+
+        <a class="navbar-brand hidden-lg" href="user-login.htm" aria-label="登录"> <i class="icon-user icon"></i></a>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mr-auto">
+<!--                 <li class="dropdown">
+                  <a href="/" class="nav-link demo1 " target="_self">首页<span class="caret"></span></a>
+                </li> -->
+                
+              <!--   <li class="dropdown"><a href="forum-1.htm" class="nav-link demo1 " target="_blank">跨境头条<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="forum-8.htm" target="_blank">跨境交流</a></li>
+                  <li><a href="forum-12.htm" target="_blank">跨境市场</a></li>
+                 </ul>
+                </li>
+                
+                 <li class="nav-item bbx d-none d-lg-block">
+                       <a class="nav-link " href="minitools.htm" target="_blank">工具箱<i class="iconfont icon-xiajiantou"></i><i class="iconfont icon-shangjiantou"></i> </a>
+                      <ul class="dropdown-menu" style="width:200px;left:50%;transform: translate(-50%, 0);">
+                              <li style="float: left;width:50%;text-align: center"><a href="https://www.amz123.com/tools-bianjiqi" target="_blank">可视化编辑器</a></li>
+                              <li style="float: left;width:50%;text-align: center"><a href="https://www.amz123.com/exchangepage" target="_blank">在线汇率换算</a></li>
+                      </ul>
+                </li>
+                <li class="dropdown"><a href="fuwu" class="nav-link demo1 " target="_blank">找服务<span class="caret"></span></a>
+                </li> -->
+            </ul>
+
+ <!--            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#" id="ax_sign_mobile"><i class="icon-gift"></i> 签到</a></li>
+                <li class="nav-item hidden-lg">
+                  <a class="nav-link" href="search.htm"><i class="icon-search"></i> 搜索</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="user-login.htm"><i class="icon-user"></i> 登录</a></li>
+                <li class="nav-item"><a class="nav-link" href="user-create.htm"><i class="icon-user-plus"></i> 注册</a></li>
+                                
+            </ul> -->
+        </div>
     </div>
   </header>
-  <section class="page-main">
+
+<main id="body">
     <div class="container">
-      <div id="main-content" class="main-content">
-        <div class="main-item" data-id="community">
-          <div class="caption"> <i class="icon icon-nav"></i>
-            技术社区
-          </div>
-          <div class="content">
-            <ul class="list clearfix">
-              <li>
-                <a target="_blank" href="https://www.cnblogs.com">
-                  <div class="title">
-                    <img src="img/logo_small.gif" alt="">博客园</div>
-                  <div class="desc">开发者的网上家园</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.csdn.net">
-                  <div class="title">
-                    <img src="img/csdn.gif" alt="">CSDN</div>
-                  <div class="desc">专业IT技术社区</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.51cto.com">
-                  <div class="title">
-                    <img src="img/logo.gif" alt="">51cto
+      <div class="container1">
+
+        <div style="display: flex;flex-wrap: wrap;margin-bottom:1rem">
+
+                <div style="flex:1;margin-left: 100px;margin-top: 20px;" class="d-none  d-lg-block"><a href="/">
+                  <img src="static/img/logo.png" width="150px" title="亚马逊卖家网址导航"></a>
+                </div>
+
+                <div class="rows search_box" style="width: 66%">
+                    <div id="search-boxes" class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="rows">
+                                <div class="ddd">
+                                    <ul class="search-list">
+                                        <div class="li current"><a href="javascript:;" class="btns">百度</a></div>
+                                        <div class="li"><a href="javascript:;" class="btns">开发</a></div>
+                                        <div class="li"><a href="javascript:;" class="btns">谷歌</a></div>
+                                        <div class="li"><a href="javascript:;" class="btns">必应</a></div>
+                                        <div class="li"><a href="javascript:;" class="btns">搜狗</a></div>
+                                        <div class="li"><a href="javascript:;" class="btns">知乎</a></div>
+                                </div>
+                            </div>
+
+                            <div class="tab-content search-tab-content">
+                                <div class="tab-pane active" id="search_box-baidu">
+                                    <form action="https://www.baidu.com/s" method="get" target="_blank" _lpchecked="1">
+                                        <div>
+                                            <div class="search-input"><input type="text" class="form-control" autocomplete="off" placeholder="请输入搜索内容" name="wd" id="skeysbd"><span class="search-sbmit"><input type="hidden" name="tn" value="94725333_hao_pg"><i class="iconfont icon-search" style="color:#000;font-size: 20px;"></i></span></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" id="search_box-google">
+                                    <form action="https://www.google.com.hk/search?" method="get" target="_blank">
+                                        <div>
+                                            <div class="search-input"><input type="text" class="form-control" placeholder="Google一下" name="q" autocomplete="off"><span class="search-sbmit"><i class="iconfont icon-search" style="color:#000;font-size: 20px;"></i></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                               <div class="tab-pane" id="search_box-bing">
+                                    <form action="https://cn.bing.com/search?" method="get" target="_blank">
+                                        <div>
+                                            <div class="search-input"><input type="text" class="form-control" placeholder="必应一下" name="q" autocomplete="off"><span class="search-sbmit"><i class="iconfont icon-search" style="color:#000;font-size: 20px;"></i></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <!--  <div class="picScroll-top" style="margin-right: 8px;">
+                </div> -->
+        </div>
+
+        <div class="row1">
+             <div class="leftcl">
+              <div class="col-md-1s sidebars">
+                  <div class="content-sidebar" style="">
+                      <dl id="goto">
+                        <dt style="top: 83px;">
+                          <span class="show-list"></span>
+                        </dt>
+                        <dd class="">
+                          <a href="#cygj" class="auto-scroll" data-offset="-20" data-speed="500">常用工具</a>
+                        </dd>
+                        <dd class="">
+                          <a href="#top_7" class="auto-scroll" data-offset="-20" data-speed="500">技术社群</a>
+                        </dd>
+                        <dd class="current">
+                          <a href="#top_8" class="auto-scroll" data-offset="-20" data-speed="500">学习平台</a>
+                        </dd>
+                        <dd class="">
+                          <a href="#qtgj" class="auto-scroll" data-offset="-20" data-speed="500">其他工具</a>
+                        </dd>
+                      </dl>
                   </div>
-                  <div class="desc">中国领先的IT技术网站</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.w3school.com.cn">
-                  <div class="title">
-                    <img src="img/w3school.png" alt="">w3school</div>
-                  <div class="desc">全球最大的中文 Web 技术教程</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.oschina.net">
-                  <div class="title">
-                    <img src="img/logo_oschina.gif" alt="">开源中国</div>
-                  <div class="desc">中国最大的开源技术社区</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://segmentfault.com">
-                  <div class="title">
-                    <img src="img/segmentfault.png" alt="">segmentfault</div>
-                  <div class="desc">中国领先的开发者技术社区</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.linuxidc.com">
-                  <div class="title">
-                    <img src="img/linuxidc_logo.jpg" alt="">Linux公社</div>
-                  <div class="desc">Linux系统门户网站</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.importnew.com">
-                  <div class="title">
-                    <img src="img/importnew.png" alt="">importnew</div>
-                  <div class="desc">专注Java & Android 技术分享</div>
-                </a>
-              </li>
-            </ul>
-          </div>
+              </div>
+             </div>
+
+             <div class="row">
+               <div id="main-container">  
+                <div class="main-content" style="position:relative">   
+                <!--常用工具开始-->
+                <div class="indexbox current" id="cygj">
+                      <div class="indexbox_title cygjtabs" style="position: relative;display: flex">
+                          <strong class="tabcheck-tools current" data-id="cygj">常用工具</strong>
+                      </div>
+                      <div class="categorytop default" id="catalog_cygj" style="">
+                          <ul align="left" style="display: flex;flex-wrap: wrap;">
+                                <li>
+                                  <img src="static/img/tool/timestamp.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/timestamp/" target="_blank" style="color:#444 !important">
+                                    时间戳转换
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/hexconvert.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/hexconvert/" target="_blank" style="color:#444 !important">
+                                    进制转换
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/ip.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/ip/" target="_blank" style="color:#444 !important">
+                                    IP地址查询
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/base64.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/base64image/" target="_blank" style="color:#444 !important">
+                                    图片base64编码
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/code.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/coderunner/" target="_blank" style="color:#444 !important">
+                                    在线代码测试
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/down.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/urlconvert/" target="_blank" style="color:#444 !important">
+                                    下载链接转换工具
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/cal.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/calc/" target="_blank" style="color:#444 !important">
+                                    网上计算器
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/curl.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/curl/" target="_blank" style="color:#444 !important">
+                                    curl命令转代码
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/zf.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/zhconvert" target="_blank" style="color:#444 !important">
+                                    中文简繁体转换
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/dx.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/daxie/" target="_blank" style="color:#444 !important">
+                                    数字大写转换器
+                                  </a>
+                                </li>
+                                 <li>
+                                  <img src="static/img/tool/er.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/qrcode" target="_blank" style="color:#444 !important">
+                                   二维码制作工具
+                                  </a>
+                                </li>
+                                <li>
+                                  <img src="static/img/tool/jj.png" width="16"  >&nbsp;
+                                  <a href="https://tool.lu/encdec/" target="_blank" style="color:#444 !important">
+                                   加密解密
+                                  </a>
+                                </li>
+                          </ul>
+                      </div>
+                  </div>
+                <!--常用工具结束-->
+                <div class="clearfix"></div>
+                <!--论坛资讯开始-->
+                <div class="indexbox fNAV 0" id="top_7" style="position:relative">
+                   <div class="indexbox_title">
+                     <strong style="font-weight: bold !important;">技术社区</strong>
+                   </div>
+                  <div class="showdiv" id="catalog_7">
+                      <section data-catalog="download" class="active">
+                          <ul class="website-list">
+                              <li class="hot-item">
+                                      <div class="item-card">
+                                      <div class="icons"><img src="static/img/tech/cnblogs.png"></div>
+                                      <div class="contents">
+                                          <a href="https://www.cnblogs.com/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                             博客园                       
+                                              </a>
+                                          <p class="description">开发者的网上家园</p></div>
+                                  </div>
+                              </li>
+                              <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/csdn.png"></div>
+                                      <div class="contents">
+                                          <a href="https://www.csdn.net/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                              CSDN                       </a>
+                                          <p class="description">中文最大的技术社区</p></div>
+                                  </div>
+                              </li>
+                              <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/oschina.ico"></div>
+                                      <div class="contents">
+                                          <a href="https://www.oschina.net/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                              开源中国                        
+                                            </a>
+                                          <p class="description">目前国内最大的开源技术社区 </p></div>
+                                  </div>
+                              </li>
+                              <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/sf.ico"></div>
+                                      <div class="contents">
+                                          <a href="https://segmentfault.com/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                              SF思否               
+                                            </a>
+                                          <p class="description">思否是中国领先的开发者技术社区 </p></div>
+                                  </div>
+                              </li>
+                               <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/v2ex.ico"></div>
+                                      <div class="contents">
+                                          <a href="https://www.v2ex.com/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                              V2EX            
+                                            </a>
+                                          <p class="description">创意工作者们的社区</p></div>
+                                  </div>
+                              </li>
+                               <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/juejin.png"></div>
+                                      <div class="contents">
+                                          <a href="https://juejin.im" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                             掘金              
+                                            </a>
+                                          <p class="description">一个帮助开发者成长的社区</p></div>
+                                  </div>
+                              </li>
+                               <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/51.ico"></div>
+                                      <div class="contents">
+                                          <a href="https://www.51cto.com/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                              51CTO              
+                                            </a>
+                                          <p class="description">中国领先的IT技术网站 </p></div>
+                                  </div>
+                              </li>
+                               <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/toutiao.png"></div>
+                                      <div class="contents">
+                                          <a href="https://toutiao.io/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                              开发者头条               
+                                            </a>
+                                          <p class="description">程序员分享平台</p></div>
+                                  </div>
+                              </li>
+                               <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/InfoQ.jpg"></div>
+                                      <div class="contents">
+                                          <a href="https://xie.infoq.cn/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                              InfoQ              
+                                            </a>
+                                          <p class="description">一个实践驱动的技术社区资讯站点</p></div>
+                                  </div>
+                              </li>
+                               <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/stackoverflow.svg"></div>
+                                      <div class="contents">
+                                          <a href="https://segmentfault.com/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                              StackOverflow               
+                                            </a>
+                                          <p class="description">全球最大的技术问答社区</p></div>
+                                  </div>
+                              </li>
+                               <li class="hot-item">
+                                      <div class="item-card   ">
+                                      <div class="icons"><img src="static/img/tech/cu.png"></div>
+                                      <div class="contents">
+                                          <a href="http://www.chinaunix.net/" class="website" target="_blank" rel="nofollow" style="color:#444">
+                                              ChinaUnix               
+                                            </a>
+                                          <p class="description">中国最大的Linux/Unix技术社区网站 </p></div>
+                                  </div>
+                              </li>
+                               
+                        </ul>
+                      </section>
+                  </div>
+                </div>
+                <!--论坛资讯结束-->
+                <div class="clearfix"></div>
+               <!--综合软件开始-->
+               <div class="indexbox fNAV 0" id="top_8" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">学习平台</strong>
+<!--                    <span class="ul-more-title tpl0_span">更多软件  &gt;</span>
+ -->                  </div>
+                <div id="catalog">
+                    <section data-catalog="download" class="active">
+                        <ul class="website-list">
+                          <li class="hot-item ">
+                                    <div class="item-card   ">
+                                    <div class="icons"><img src="static/img/study/cn.ico"></div>
+
+                                    <div class="contents"><a href="https://www.runoob.com/" class="website" target="_blank" rel="nofollow" style="color:#444">菜鸟教程</a>
+                                        <p class="description">学的不仅是技术，更是梦想！</p></div>
+                                </div>
+                          </li>
+
+                          <li class="hot-item ">
+                                    <div class="item-card   ">
+                                    <div class="icons"><img src="static/img/study/w3.png"></div>
+
+                                    <div class="contents"><a href="https://www.w3school.com.cn/" class="website" target="_blank" rel="nofollow" style="color:#444">W3school</a>
+                                        <p class="description">球最大的中文 Web 技术教程</p></div>
+                                </div>
+                          </li>
+                          <li class="hot-item ">
+                                    <div class="item-card   ">
+                                    <div class="icons"><img src="static/img/study/imooc.png"></div>
+
+                                    <div class="contents"><a href="https://www.imooc.com/" class="website" target="_blank" rel="nofollow" style="color:#444">慕课网</a>
+                                        <p class="description">程序员的梦工厂</p></div>
+                                </div>
+                          </li>
+                          <li class="hot-item ">
+                                    <div class="item-card   ">
+                                    <div class="icons"><img src="static/img/study/jk.jpg"></div>
+
+                                    <div class="contents"><a href="https://wiki.jikexueyuan.com/" class="website" target="_blank" rel="nofollow" style="color:#444">极客学院</a>
+                                        <p class="description">中国专业的IT职业在线教育平台</p></div>
+                                </div>
+                          </li>
+                         <li class="hot-item ">
+                                    <div class="item-card   ">
+                                    <div class="icons"><img src="static/img/study/gitchat.png"></div>
+
+                                    <div class="contents"><a href="https://gitbook.cn/" class="website" target="_blank" rel="nofollow" style="color:#444">Gitchat</a>
+                                        <p class="description">IT知识分享平台</p></div>
+                                </div>
+                          </li>
+                         <li class="hot-item ">
+                                    <div class="item-card   ">
+                                    <div class="icons"><img src="static/img/study/leet.jpg"></div>
+
+                                    <div class="contents"><a href="https://leetcode-cn.com/" class="website" target="_blank" rel="nofollow" style="color:#444">力扣LeetCode</a>
+                                        <p class="description">专业的LeetCode分享平台</p></div>
+                                </div>
+                          </li>
+                          <li class="hot-item ">
+                                    <div class="item-card   ">
+                                    <div class="icons"><img src="static/img/study/bootcss.ico"></div>
+
+                                    <div class="contents"><a href="https://www.bootcss.com/" class="website" target="_blank" rel="nofollow" style="color:#444">Bootstrap中文网</a>
+                                        <p class="description">致力于提供详尽的Bootstrap中文文档、代码实例。</p></div>
+                                </div>
+                          </li>
+                          <li class="hot-item ">
+                                    <div class="item-card">
+                                    <div class="icons"><img src="static/img/study/github.svg"></div>
+
+                                    <div class="contents"><a href="https://github.com/" class="website" target="_blank" rel="nofollow" style="color:#444">GitHub</a>
+                                        <p class="description">世界最大的开源代码共享社区</p></div>
+                                </div>
+                          </li>
+                          <li class="hot-item ">
+                                    <div class="item-card">
+                                    <div class="icons"><img src="static/img/study/gitee.png"></div>
+
+                                    <div class="contents"><a href="https://gitee.com/" class="website" target="_blank" rel="nofollow" style="color:#444">Gitee</a>
+                                        <p class="description">中国最大的开源代码共享社区</p></div>
+                                </div>
+                          </li>
+                          <li class="hot-item ">
+                                      <div class="item-card">
+                                      <div class="icons"><img src="static/img/study/zhihu.png"></div>
+
+                                      <div class="contents"><a href="https://www.zhihu.com/" class="website" target="_blank" rel="nofollow" style="color:#444">知乎</a>
+                                          <p class="description">中国最大的问答社区</p></div>
+                                  </div>
+                            </li>
+                    </ul>
+                  </section>
+                </div>
+               </div>
+               <!--综合软件结束-->
+               <div class="clearfix"></div>
+
+               <!--其它工具开始-->
+               <div class="indexbox current" id="qtgj">
+                    <div class="indexbox_title">
+                        <strong class="tabcheck current" data-id="10000">其他工具</strong>
+                    </div>
+
+                    <div id="catalog_10000" class="category showdiv" style="">
+                      <ul align="center">
+                         <li><span style="color:#E53333;">代码转换：</span></li>
+                         <li><a href="https://tool.lu/html/" target="_blank">Html格式转换</a></li>
+                         <li><a href="https://tool.lu/js/" target="_blank" >Js格式转换</a></li>
+                         <li><a href="https://tool.lu/css/" target="_blank">Css格式转换</a></li>
+                         <li><a href="https://tool.lu/sql/" target="_blank">Sql格式转换</a></li>
+                         <li><a href="https://tool.lu/json/" target="_blank">Json格式转换</a></li>
+                         <li><a href="https://tool.lu/xml/" target="_blank">Xml格式转换</a></li>
+                         <li><a href="https://tool.oschina.net/codeformat/java" target="_blank">Java格式化</a></li>
+                         <li><a href="https://tool.lu/php/" target="_blank">Php格式化</a></li>
+                         <li><a href="https://tool.lu/pyc/" target="_blank">Python格式化</a></li>
+                         <li><span style="color:#E53333;">图片管理：</span></li>
+                         <li><a href="http://www.ico51.cn/" target="_blank">生成透明ICO</a></li>
+                         <li><a href="https://convertio.co/zh/" target="_blank">文件格式转换</a></li>
+                         <li><a href="https://www.iloveimg.com/zh-cn" target="_blank">图片合并剪辑</a></li>
+
+
+
+                      </ul>
+                    </div>
+                </div>
+               <!--其它软件结束-->
+
+                </div>
+               </div>
+             </div>
         </div>
 
-        <div class="main-item" data-id="tool">
-          <div class="caption"> <i class="icon icon-nav"></i>
-            工具
-          </div>
-          <div class="content">
-            <ul class="list clearfix">
-
-              <li>
-                <a target="_blank" href="http://tool.oschina.net/">
-                  <div class="title">
-                    <img src="img/logo_oschina.gif" alt="">在线工具</div>
-                  <div class="desc"> 开源中国在线工具<</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://cloudconvert.com/">
-                  <div class="title">
-                    <img src="img/cloudconvert.png" alt="">CloudConvert</div>
-                  <div class="desc">在线转化压缩包、字体、图片、视频、电子书</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.ilovepdf.com/zh_cn">
-                  <div class="title">
-                    <img src="img/ilovepdf.svg" alt="">iLovePDF</div>
-                  <div class="desc">为PDF爱好者提供的PDF文件在线转换工具</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://convertio.co/zh">
-                  <div class="title">
-                    <img src="img/convertio.png" alt="">Convertio</div>
-                  <div class="desc">文件转换器</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://tool.lu">
-                  <div class="title">
-                    <img src="img/tool.png" alt="">tool.lu</div>
-                  <div class="desc">程序员的工具箱</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://md.phodal.com/">
-                  <div class="title">
-                    <img src="" alt="">Markdown</div>
-                  <div class="desc">Markdown微信公号编辑器</div>
-                </a>
-              </li>
-             <li>
-                <a target="_blank" href="http://www.bejson.com/">
-                  <div class="title">
-                    <img src="" alt="">Be JSON</div>
-                  <div class="desc">在线JSON校验格式化工具</div>
-                </a>
-              </li>
-             <li>
-                <a target="_blank" href="http://code2img.75team.com">
-                  <div class="title">
-                    <img src="" alt="">code2img</div>
-                  <div class="desc">代码片段转化成图片</div>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
-
-        <div class="main-item" data-id="blog">
-          <div class="caption">
-            <i class="icon icon-nav"></i>
-            博客
-          </div>
-          <div class="content">
-            <ul class="list clearfix">
-              <li>
-                <a target="_blank" href="http://www.ityouknow.com/">
-                  <div class="title">
-                    <img src="img/favicon.png" alt="">纯洁的微笑</div>
-                  <div class="desc">纯洁的微笑技术分享博客</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.cnblogs.com/zhaopei/">
-                  <div class="title">
-                    <img src="img/zhaopei.jpg" alt="">农码一生</div>
-                  <div class="desc">开始，我们以为自己什么都知道。后来发现，其实我们什么都不知道。</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.zuoxiaolong.com/">
-                  <div class="title">
-                    <img src="img/header_logo.png" alt="">左潇龙</div>
-                  <div class="desc">记录了职场与生活当中的点点滴滴，让你看到不一样的程序员博客</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://blog.52itstyle.com/">
-                  <div class="title">
-                    <img src="img/52itstyle.jpeg" alt="">柒's Blog</div>
-                  <div class="desc">其实我是一个程序员</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://blog.biezhi.me/">
-                  <div class="title">
-                    <img src="img/biezhi.png" alt="">王爵的一亩三分地</div>
-                  <div class="desc">坚持做你所热爱的</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.blovb.com/">
-                  <div class="title">
-                    <img src="img/blovb.png" alt="">黑鸟</div>
-                  <div class="desc">黑鸟安全网走进信息安全</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://cmsblogs.com/">
-                  <div class="title">
-                    <img src="img/qiniudn.png" alt="">chenssy</div>
-                  <div class="desc">致力打造Java精品博客站点</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://relatos.top/techblog/">
-                  <div class="title">
-                    <img src="img/techblog.png" alt="">更多原创技术博客</div>
-                  <div class="desc">更多原创技术博客，请关注原创技术博客大联盟！</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="main-item" data-id="other">
-          <div class="caption">
-            <i class="icon icon-nav"></i>
-            其它
-          </div>
-          <div class="content">
-            <ul class="list clearfix">
-              <li>
-                <a target="_blank" href="http://favorites.ren/">
-                  <div class="title">
-                    <img src="img/favorites.ico" alt="">云收藏</div>
-                  <div class="desc">让收藏更简单！-Spring Boot开源项目</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.springboot.fun/">
-                  <div class="title">
-                    <img src="img/spring.png" alt="">Spring Boot 中文索引</div>
-                  <div class="desc">Spring Boot 中文社区资源链接导航，开源代码，博客，工具</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://www.springcloud.fun/">
-                  <div class="title">
-                    <img src="img/spring.png" alt="">Spring Cloud 中文索引</div>
-                  <div class="desc">Spring Cloud 中文社区资源链接导航，开源代码，博客，工具</div>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="http://wherebt.com/">
-                  <div class="title">
-                    <img src="img/wherebt.ico" alt="">BT导航</div>
-                  <div class="desc">致力于提供一切BT相关的导航服务</div>
-                </a>
-              </li>
-             <li>
-                <a target="_blank" href="http://myslide.cn">
-                  <div class="title">
-                    <img src="img/mysilde.png" alt="">myslide</div>
-                  <div class="desc">专注PPT分享，追随SlideShare和SpeakerDeck的脚步</div>
-                </a>
-              </li>
-             <li>
-                <a target="_blank" href="https://github.com/ityouknow/blog-comments/issues/124">
-                  <div class="title">
-                    <img src="img/github.jpg" alt="">推荐资源</div>
-                  <div class="desc">想给本站推荐资源，欢迎在github上给我留言！</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
       </div>
     </div>
-  </section>
-  <footer id="footer">
+</main>
+
+
+<footer class="text-muted small bg-dark py-4 mt-3 d-none d-lg-block" id="footer" style="background:#222c3c !important">
     <div class="container">
-      <div class="copyright">Copyright ©  2018</div>
+        <div class="row">
+            <div class="col">
+                
+                <div class="">
+                    <div class="footer-new">
+                        <div class="about" style="width: 380px;">
+                            <h2>关于</h2>
+                            <div class="text">
+                                Tool 专注一站式导航，提供最精华有趣的内容&nbsp;。 本站仅为网址导航，网站来源于网络，对其内容不负任何责任，若有问题，请联系我们
+                            </div>
+                        </div>
+                        <div class="about" style="width: 100px;">
+                       <!--      <h2>链接</h2>
+                            <div class="text">
+                                <p><a href="/about" target="_blank">关于我们</a></p>
+                                <p><a href="contact" target="_blank">联系我们</a></p>
+                            </div> -->
+                        </div>
+                        <div class="about">
+                            <h2>公众号<!-- &amp;小程序 --></h2>
+                            <div class="qrmain">
+                                <div class="qrbox">
+                      <!--               <div class="checktab">
+                                        <div class="fur">公众号</div>
+                                         <div class="">小程序</div>
+                                    </div> -->
+                                    <div class="qrcodepos" id="t1" style="">
+                                        <div><img src="static/img/wechat/laughyouth.jpg" class="appdown" style="width:108px;height:108px"></div>
+                                        <div><img src="static/img/wechat/objectperfect.jpg" class="appdown" style="width:108px;height:108px"></div>
+                                    </div>
+                                    <div class="qrcodepos" id="t2" style="display: none;">
+                                        <div><img src="https://img.amz123.com/static/images/amz123xcx.jpg" class="appdown" style="width:108px;height:108px"></div>
+                                        <div><img src="https://img.amz123.com/static/images/hmdxcx.jpg" class="appdown" style="width:108px;height:108px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about" style="text-align: center; width: 200px;">
+                            <h2>Tooool友社群</h2>
+                            <div class="text">
+                                <p style="">
+                                  <img src="static/img/wechat/betsobject.jpg" class="appdown" style="width:108px;height:108px;margin-top: 13px">
+                                </p>
+                            </div>
+                            <p style="">扫码拉你进群</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
-  <script src="js/jquery-1.12.4.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('#nav ul li a').on('click', function(){
-        $(this).parent('li').addClass('active').siblings('li').removeClass('active');
-        var navItemFor = $(this).attr('data-for');
-        var mainContent = $('#main-content');
-        var mainItem = mainContent.find('.main-item');
-        var mainItemTop = mainContent.find('[data-id=' + navItemFor + ']').offset().top - 92;
-        $('body, html').animate({scrollTop: mainItemTop});
-      });
-    });
-  </script>
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?4655246b4fe3f962806952990b1709fd";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-    <div style="display: none;">
-      <script src="https://s22.cnzz.com/z_stat.php?id=1272948323&web_id=1272948323" language="JavaScript"></script>   
-    </div>
+</footer>
+
 </body>
 </html>
