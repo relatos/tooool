@@ -48,15 +48,19 @@ $('.current-menu strong').on('click', function () {
 $('.search-list .li').on('click', function () {
 
     var index = $(this).index();
-    alert(1);
 
-    $('.search-list .current').removeClass('current')
+    $('.search-list .current').removeClass('current');
 
     $(this).addClass('current');
+
+    var  inputval=$('.search-tab-content .active .form-control').val();
 
     $('.search-tab-content .active').removeClass('active')
 
     $('.search-tab-content .tab-pane').eq(index).addClass('active')
+
+    $('.search-tab-content .active .form-control').val(inputval);
+
 
 })
 
