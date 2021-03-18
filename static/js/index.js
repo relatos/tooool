@@ -32,7 +32,7 @@ $('#bdbtns').on('click', function () {
 
         if (skeysbd) {
 
-            $.get('https://www.amz123.com/bdsearch', {skeysbd: skeysbd})
+            $.get('http://tooool.org/bdsearch', {skeysbd: skeysbd})
 
         }
 
@@ -84,9 +84,13 @@ $('.search-list .li').on('click', function () {
 
     $(this).addClass('current');
 
+    var  inputval=$('.search-tab-content .active .form-control').val();
+
     $('.search-tab-content .active').removeClass('active')
 
     $('.search-tab-content .tab-pane').eq(index).addClass('active')
+
+    $('.search-tab-content .active .form-control').val(inputval);
 
 })
 
