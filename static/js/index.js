@@ -392,18 +392,14 @@ $(function(){
 
         $(this).addClass('current');
 
+
+   
         if(index===0){
-
-            $('#cygj').find('.categorytop').show();
-
-            $('#cygj').find('.category').hide();
-
+            $('#hot-tool').find('.categorytop').show();
+            $('#hot-tool').find('.category').hide();
         }else{
-
-            $('#cygj').find('.category').show();
-
-            $('#cygj').find('.categorytop').hide();
-
+            $('#hot-tool').find('.category').show();
+            $('#hot-tool').find('.categorytop').hide();
         }
 
         arr = [];
