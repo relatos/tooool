@@ -386,37 +386,13 @@ $(function(){
 
     $('.cygjtabs').find('strong').on('click',function(){
 
-        var index = $(this).index();
+        $('#catalog_'+ $('.cygjtabs').find('.current').attr('data-id')).hide();
 
         $('.cygjtabs').find('.current').removeClass('current');
 
         $(this).addClass('current');
 
-
-   
-        if(index===0){
-            $('#hot-tool').find('.categorytop').show();
-            $('#hot-tool').find('.category').hide();
-        }else{
-            $('#hot-tool').find('.category').show();
-            $('#hot-tool').find('.categorytop').hide();
-        }
-
-        arr = [];
-
-        var p = $('.indexbox');
-
-        if (p.length < 1) return;
-
-        p.each(function () {
-
-            var of = $(this).offset();
-
-            arr.push(Math.floor(of.top));
-
-        });
-
-
+        $('#catalog_'+$(this).attr('data-id')).show()
 
     })
 
