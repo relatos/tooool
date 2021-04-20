@@ -1252,3 +1252,99 @@ padding-bottom: 0;
             display: none;
         }
     }           
+
+
+
+
+
+
+.wx-public-container .el-dialog {
+    width:320px;
+    height:380px;
+    border-radius:12px;
+    margin-top:20vh!important;
+    background: #FFF;
+}
+.wx-public-container .el-dialog .el-dialog__header {
+
+    display:none
+}
+.wx-public-container .el-dialog .el-dialog__body {
+    color: #606266;
+    font-size: 14px;
+    word-break: break-all;
+    padding:0
+}
+.wx-public-dialog .top {
+    width:320px;
+    height:80px;
+    border-radius:12px 12px 0 0;
+    background:url(../img/wechat/public_wx_bg.png) no-repeat;
+    background-size:320px 80px
+}
+.wx-public-dialog .top p {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    font-size:22px;
+    color:#fff;
+    font-weight:700;
+    letter-spacing:2px;
+    text-align:center;
+    line-height:80px
+}
+.wx-public-dialog .qrcode {
+    width:197px;
+    height:197px;
+    margin:0 auto;
+    margin-top:24px
+}
+.wx-public-dialog .qrcode>img {
+    width:197px;
+    height:197px;
+    border:2px solid #2777ff
+}
+.wx-public-dialog .wx-name {
+    text-align:center;
+    font-size:0;
+    margin-top:20px
+}
+.wx-public-dialog .wx-name span {
+    display:inline-block;
+    font-size:16px;
+    vertical-align:middle;
+    color:#262729
+}
+.wx-public-dialog .wx-name span.icon {
+    width:32px;
+    height:32px;
+    background:url(../img/favicon.ico) no-repeat;
+    background-size:32px 32px;
+    margin-right:10px;
+    border-radius:4px
+}
+
+.el-dialog__wrapper {
+    z-index: 2009;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    background: rgba(0,0,0,0.4);
+
+}
+
+.el-dialog {
+    position: relative;
+    margin: 0 auto 50px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+    box-sizing: border-box;
+    width: 50%;
+}
+

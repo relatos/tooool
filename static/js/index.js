@@ -25,24 +25,15 @@ $('.bottomFixedAd').on('click', function () {
 
 })
 $('#bdbtns').on('click', function () {
-
     try {
-
         var skeysbd = $('#skeysbd').val()
-
         if (skeysbd) {
-
             $.get('http://tooool.org/bdsearch', {skeysbd: skeysbd})
-
         }
 
     } catch (err) {
 
-
-
     }
-
-
 
 })
 
@@ -414,4 +405,23 @@ $(function(){
         }
     });
 
+})
+
+
+$('#pub-wechat').on('click', function () {
+
+    if($('.el-dialog').css("display")=='none'){
+        $('.wx-public-dialog').addClass('el-dialog__wrapper');
+        $('.el-dialog').css("display","block");
+    }else {
+        $('.wx-public-dialog').removeClass('el-dialog__wrapper');
+        $('.el-dialog').css("display","none");
+    }
+
+})
+
+
+$('.wx-public-dialog').on('click', function () {
+        $('.wx-public-dialog').removeClass('el-dialog__wrapper');
+        $('.el-dialog').css("display","none");
 })
