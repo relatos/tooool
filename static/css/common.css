@@ -1348,3 +1348,70 @@ padding-bottom: 0;
     width: 50%;
 }
 
+
+.g-popover {
+    display: none;
+    z-index: 99000;
+    position: absolute;
+    will-change: transform;
+    transform: translate3d(24px, 45px, 0px);
+    left: 0;
+    bottom: 60px;
+}
+
+.gdd-favorite-guide__dark {
+    color: #fff;
+}
+
+.gdd-favorite-guide {
+    position: absolute;
+    z-index: 3000;
+    display: inline-block;
+    font-family: PingFang SC;
+    font-size: 16px;
+}
+
+.gdd-favorite-guide__arrow {
+    position: absolute;
+    z-index: 1;
+    left: 40%;
+    top: -20px;
+    width: 100px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-60deg);
+    transform-origin: 10px bottom;
+}
+
+.gdd-favorite-guide__arrow--stem {
+    width: 38px;
+    height: 18px;
+}
+
+.gdd-favorite-guide__dark .gdd-favorite-guide__arrow--stem {
+    background-color: #3765f8;
+}
+
+.gdd-favorite-guide__dark .gdd-favorite-guide__arrow--head {
+    border-left: 18px solid #3765f8;
+}
+
+.gdd-favorite-guide__arrow--head {
+    width: 0;
+    height: 0;
+    margin-left: -2px;
+    border: 18px solid transparent;
+}
+
+.gdd-favorite-guide__dark .gdd-favorite-guide__content {
+    background: linear-gradient(270deg, #5a82ff -7.19%, #2254f4 98.72%);
+}
+
+.gdd-favorite-guide__content {
+    position: relative;
+    z-index: 10;
+    padding: 14px 16px;
+    border-radius: 4px;
+}
+

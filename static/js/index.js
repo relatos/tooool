@@ -425,3 +425,17 @@ $('.wx-public-dialog').on('click', function () {
         $('.wx-public-dialog').removeClass('el-dialog__wrapper');
         $('.el-dialog').css("display","none");
 })
+
+
+
+$("#logo-1").hover(function(){
+    $("#hover-logo").css("display","block");
+},function(){
+    $("#hover-logo").css("display","none");
+});
+
+$("#logo-2").hover(function(){
+    $("#hover-logo").css("display","block");
+},function(){
+    $("#hover-logo").css("display","none");
+});
