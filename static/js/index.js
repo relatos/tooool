@@ -434,8 +434,3 @@ $("#logo-1").hover(function(){
     $("#hover-logo").css("display","none");
 });
 
-$("#logo-2").hover(function(){
-    $("#hover-logo").css("display","block");
-},function(){
-    $("#hover-logo").css("display","none");
-});
