@@ -434,3 +434,15 @@ $("#logo-1").hover(function(){
     $("#hover-logo").css("display","none");
 });
 
+$('.botton-footer').click(function () {
+    $('.footer_btnbox .active').removeClass('active')
+    $(this).addClass('active')
+    let dataid =    $(this).attr('data');
+    if (dataid == '-1') {
+        $('.links-box').hide();
+        $('#yqlinks-cate-00').show();
+    }else{
+        $('.links-box').hide();
+        $('#yqlinks-cate-'+dataid).show();
+    }
+})
