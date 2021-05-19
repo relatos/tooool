@@ -420,6 +420,12 @@ $('#pub-wechat').on('click', function () {
 
 })
 
+$('#pub-dating').on('click', function () {
+
+    window.location.href = "girls.html";
+
+})
+
 
 $('.wx-public-dialog').on('click', function () {
         $('.wx-public-dialog').removeClass('el-dialog__wrapper');
