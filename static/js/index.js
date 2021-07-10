@@ -128,25 +128,16 @@ var headerheight = $('#header .container').height();
 
 
     function init() {
-
-
-
         var soffset = s.offset();
-
         start = soffset.top;
-
         stop = start + $parent.height();
-
         cinit();
-
     }
 
 
 
     function cinit() {
-
         cHeight = c.height();
-
     }
 
 
@@ -154,7 +145,6 @@ var headerheight = $('#header .container').height();
     function cClear() {
 
         c.removeClass('fixed');
-
         c.removeClass('absolute');
 
     }
@@ -164,17 +154,12 @@ var headerheight = $('#header .container').height();
     function check_scroll() {
 
         var st = window.pageYOffset
-
             || document.documentElement.scrollTop
-
             || document.body.scrollTop
-
             || 0;
 
         if (st <= start) {
-
             cClear();
-
         }
 
         if (st >= $('.container1').height() - $('footer').height() - 430) {
@@ -186,7 +171,6 @@ var headerheight = $('#header .container').height();
         if (st < stop - cHeight && st > (start + 30)) {
 
             c.removeClass('absolute');
-
             c.addClass('fixed');
 
         }
