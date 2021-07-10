@@ -1419,6 +1419,36 @@ dd, dt {
     /*margin-bottom:5px;*/
     position: relative;
 }
+
+
+/* for wechat page */
+.website-list.wechat li {
+    width:calc(100% / 3);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    padding:0 5px;
+    position: relative;
+}
+.website-list.wechat li .item-card .icons {
+    max-width: 70px;
+}
+.website-list.wechat li .item-card .contents{
+    width: calc(100% - 70px);
+}
+.website-list.wechat li .item-card .icons{
+    width: 100%;
+    max-width: 70px;
+}
+.website-list.wechat li .item-card img{
+    width:70px;
+    height:70px;
+    max-width: 70px;
+}
+
+/* end for wechat page */
+
+
 .web-8 li{
     width:calc(100% / 8) !important;
 }
@@ -1443,6 +1473,7 @@ dd, dt {
     max-width: 26px;
     margin-right:4px;
 }
+
 .website-list li .item-card img{
     width:26px;
     height:26px;
