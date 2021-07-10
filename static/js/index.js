@@ -392,7 +392,7 @@ $(function(){
 })
 
 
-$('#pub-wechat').on('click', function () {
+/*$('#pub-wechat').on('click', function () {
 
     if($('.el-dialog').css("display")=='none'){
         $('.wx-public-dialog').addClass('el-dialog__wrapper');
@@ -403,12 +403,7 @@ $('#pub-wechat').on('click', function () {
     }
 
 })
-
-$('#pub-dating').on('click', function () {
-
-    window.location.href = "girls.html";
-
-})
+*/
 
 
 $('.wx-public-dialog').on('click', function () {
