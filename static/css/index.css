@@ -1423,7 +1423,7 @@ dd, dt {
 
 /* for wechat page */
 .website-list.wechat li {
-    width:calc(100% / 3);
+    width:calc(100% / 4);
     overflow: hidden;
     cursor: pointer;
     text-align: left;
@@ -1447,6 +1447,19 @@ dd, dt {
 }
 
 /* end for wechat page */
+
+
+/* for manual page */
+.website-list.manual li {
+    width:calc(100% / 5);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    padding:0 5px;
+    position: relative;
+}
+
+/* end for manual page */
 
 
 .web-8 li{
