@@ -1958,8 +1958,8 @@ website-lists li .linkcard {
         margin:0px !important
     }
     .search-list .li {
-        writing-mode: tb-rl;
-        -webkit-writing-mode: vertical-rl;
+        writing-mode: tb-lr;
+        -webkit-writing-mode: vertical-lr;
     }
 }
 @media (min-width: 992px){
