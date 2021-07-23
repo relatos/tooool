@@ -1462,6 +1462,34 @@ dd, dt {
 /* end for manual page */
 
 
+/* for book page */
+.website-list.book li {
+    width:calc(100% / 3);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    padding:0 5px;
+    position: relative;
+}
+.website-list.book li .item-card .icons {
+    max-width: 50px;
+}
+.website-list.book li .item-card .contents{
+    width: calc(100% - 50px);
+}
+.website-list.book li .item-card .icons{
+    width: 100%;
+    max-width: 60px;
+}
+.website-list.book li .item-card img{
+    width:50px;
+    height:70px;
+    max-width: 70px;
+}
+
+/* end for book page */
+
+
 .web-8 li{
     width:calc(100% / 8) !important;
 }
