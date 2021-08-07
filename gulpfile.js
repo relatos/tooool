@@ -4,7 +4,9 @@ const rev = require('gulp-rev')
 const revCollector = require('gulp-rev-collector')
 const runSequence = require('run-sequence')
 const assetRev = require('gulp-asset-rev')
-const replace = require('gulp-replace'); //批量替换
+const cssminify = require('gulp-minify-css')
+var stripDebug = require('gulp-strip-debug')
+const replace = require('gulp-replace')  //批量替换
 const gulpsync = require('gulp-sync')(gulp)
 
 
