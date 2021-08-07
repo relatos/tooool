@@ -2,13 +2,12 @@ const gulp = require('gulp');
 const gutil = require('gulp-util')
 const rev = require('gulp-rev')
 const revCollector = require('gulp-rev-collector')
-const assetRev = require('gulp-asset-rev')
 const cssminify = require('gulp-minify-css')
 var stripDebug = require('gulp-strip-debug')
 const replace = require('gulp-replace')  //批量替换
-const gulpsync = require('gulp-sync')(gulp)
+// const gulpsync = require('gulp-sync')(gulp)
 const del = require('del');
-const noe_date=new Date()
+const uploadPromise=require('./tools/upload')
 // const dataStr=`${noe_date.getFullYear()}_${noe_date.getMonth()+1}_${noe_date.getDate()}_${noe_date.valueOf()}`
 const dataStr=`build`
 
@@ -18,7 +17,7 @@ const dataStr=`build`
 var baseSrcPc = 'developHtml';
 var resourceCssPc = baseSrcPc + '/**/*.css';
 var resourceJsPc = baseSrcPc + '/**/*.js';
-var resourceHtmlPc = baseSrcPc + '/v/*.html';
+// var resourceHtmlPc = baseSrcPc + '/v/*.html';
 var resourceImagePc = [baseSrcPc + '/**/*.png', baseSrcPc + '/**/*.jpg', baseSrcPc + '/**/*.svg', baseSrcPc + '/**/*.ico'];
 var resourceFontPc = [baseSrcPc + '/**/*.eot', baseSrcPc + '/**/*.ttf', baseSrcPc + '/**/*.woff', baseSrcPc + '/**/*.woff2', baseSrcPc + '/**/*.svg'];
 
@@ -118,5 +117,6 @@ gulp.task('revHtmlPcDev', function () { //批量替换本地连接为CDN链接
 // gulp.task('asas', gulpsync.sync(['clean','revCssPc', 'revJsPc', 'revFontPc', 'revImgPc','revHtmlPcDev']));
 gulp.task('build',gulp.series('clean','revCssPc', 'revJsPc', 'revFontPc', 'revImgPc','revHtmlPcDev',async() => {
     // Do something after a,b, and c are finished.
+    await uploadPromise()
     console.log('finish')
 }));

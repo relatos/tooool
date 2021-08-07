@@ -75,7 +75,7 @@ uploadToCOS = (FilePath, Key) => {
                 // console.log(options.Key + '上传' + (err ? '失败' : '完成'));
             },
         }, function (err, data) {
-            console.log(err || data);
+            // console.log(err || data);
             if (err) {
                 reject(err)
             } else {
@@ -86,10 +86,16 @@ uploadToCOS = (FilePath, Key) => {
 }
 
 const uploadPromise=()=>{
+    // return new Promise((resolve, reject)=>{
+        // return resolve(true)
+    // })
     const uploadArry=handlePath()
     uploadArry.forEach(async(item)=>{
         await uploadToCOS(item.FilePath,item.key)
     })
+    return true
+   
+
 }
 // uploadPromise()
 
