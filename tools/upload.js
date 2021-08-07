@@ -86,20 +86,13 @@ uploadToCOS = (FilePath, Key) => {
 }
 
 const uploadPromise=()=>{
-    // return new Promise((resolve, reject)=>{
-        // return resolve(true)
-    // })
     const uploadArry=handlePath()
     uploadArry.forEach(async(item)=>{
         await uploadToCOS(item.FilePath,item.key)
     })
+    console.log('上传完成')
     return true
-   
-
 }
-// uploadPromise()
-
-// console.log()
 
 
 
