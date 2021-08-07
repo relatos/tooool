@@ -8,7 +8,8 @@ var stripDebug = require('gulp-strip-debug')
 const replace = require('gulp-replace')  //批量替换
 const gulpsync = require('gulp-sync')(gulp)
 const noe_date=new Date()
-const dataStr=`${noe_date.getFullYear()}_${noe_date.getMonth()+1}_${noe_date.getDate()}_${noe_date.valueOf()}`
+// const dataStr=`${noe_date.getFullYear()}_${noe_date.getMonth()+1}_${noe_date.getDate()}_${noe_date.valueOf()}`
+const dataStr=`aa8896`
 
 
 
@@ -68,14 +69,20 @@ gulp.task('revImgPc', function () {
     return gulp.src(resourceImagePc, {
         base: baseSrcPc
     })
-        .pipe(gulp.dest('revHtml/' + dataStr))
+    .pipe(rev())
+    .pipe(gulp.dest('revHtml/' + dataStr))
+    .pipe(rev.manifest())
+    .pipe(gulp.dest('revHtml/' + dataStr + '/json/img'));
 });
 
 gulp.task('revFontPc', function () {
     return gulp.src(resourceFontPc, {
         base: baseSrcPc
     })
-        .pipe(gulp.dest('revHtml/' + dataStr))
+    .pipe(rev())
+    .pipe(gulp.dest('revHtml/' + dataStr))
+    .pipe(rev.manifest())
+    .pipe(gulp.dest('revHtml/' + dataStr + '/json/font'));
 });
 
 gulp.task('revHtmlPcDev', function () { //批量替换本地连接为CDN链接
