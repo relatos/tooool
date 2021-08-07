@@ -5,9 +5,9 @@ const fs = require('fs')
 // process.platform=='win32'
 
 const cos = new COS(cos_config);
-const fileP = path.join(__dirname, '../', 'revHtml', 'aa8896', 'static',)
+const fileP = path.join(__dirname, '../', 'revHtml', 'build', 'static',)
 
-console.log(fileP)
+// console.log(fileP)
 //https://shop-1256119282.file.myqcloud.com/tooools/static/img/favicon.ico
 //F:\\NEW_code\\tooool\\revHtml\\aa8896\\static\\img\\favicon-d8399390be.ico
 // cos.sliceUploadFile({

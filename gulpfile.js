@@ -7,9 +7,10 @@ const cssminify = require('gulp-minify-css')
 var stripDebug = require('gulp-strip-debug')
 const replace = require('gulp-replace')  //批量替换
 const gulpsync = require('gulp-sync')(gulp)
+const del = require('del');
 const noe_date=new Date()
 // const dataStr=`${noe_date.getFullYear()}_${noe_date.getMonth()+1}_${noe_date.getDate()}_${noe_date.valueOf()}`
-const dataStr=`aa8896`
+const dataStr=`build`
 
 
 
@@ -21,6 +22,15 @@ var resourceHtmlPc = baseSrcPc + '/v/*.html';
 var resourceImagePc = [baseSrcPc + '/**/*.png', baseSrcPc + '/**/*.jpg', baseSrcPc + '/**/*.svg', baseSrcPc + '/**/*.ico'];
 var resourceFontPc = [baseSrcPc + '/**/*.eot', baseSrcPc + '/**/*.ttf', baseSrcPc + '/**/*.woff', baseSrcPc + '/**/*.woff2', baseSrcPc + '/**/*.svg'];
 
+gulp.task('clean', async function () {
+    await del([
+    //   'dist/report.csv',
+      // 这里我们使用一个通配模式来匹配 `mobile` 文件夹中的所有东西
+      'revHtml/build/**/*',
+      // 我们不希望删掉这个文件，所以我们取反这个匹配模式
+    //   '!dist/mobile/deploy.json'
+    ]);
+  });
 
 gulp.task('revCssPc', function () {
     return gulp.src(resourceCssPc, {
@@ -105,8 +115,8 @@ gulp.task('revHtmlPcDev', function () { //批量替换本地连接为CDN链接
 
 
 
-// gulp.task('default', gulpsync.sync(['revCssPc', 'revJsPc', 'revFontPc', 'revImgPc','revHtmlPcDev']));
-gulp.task('ss',gulp.series('revCssPc', 'revJsPc', 'revFontPc', 'revImgPc','revHtmlPcDev',async() => {
+// gulp.task('asas', gulpsync.sync(['clean','revCssPc', 'revJsPc', 'revFontPc', 'revImgPc','revHtmlPcDev']));
+gulp.task('build',gulp.series('clean','revCssPc', 'revJsPc', 'revFontPc', 'revImgPc','revHtmlPcDev',async() => {
     // Do something after a,b, and c are finished.
     console.log('finish')
 }));
