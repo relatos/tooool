@@ -76,7 +76,7 @@ uploadToCOS = (FilePath, Key) => {
 
 const uploadPromise = () => {
     const uploadArry = handlePath()
-    //saaaadsdsddsdsds
+    //saaaadsdsddsdsdssasas
     uploadArry.forEach(async (item) => {
         await uploadToCOS(item.FilePath, item.key)
     })
