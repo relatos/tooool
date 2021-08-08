@@ -1,5 +1,6 @@
 /**
  * 上传cos主要逻辑
+ * 测试自动化构建
  */
 const COS = require('cos-nodejs-sdk-v5');
 const { cos_config } =global.process.env.SecretId?{}:require('../config/index')
