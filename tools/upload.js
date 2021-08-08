@@ -1,3 +1,6 @@
+/**
+ * 上传cos主要逻辑
+ */
 const COS = require('cos-nodejs-sdk-v5');
 const { cos_config } =global.process.env.SecretId?{}:require('../config/index')
 const upload_config=require('../config/upload')
@@ -50,19 +53,16 @@ const handlePath = () => {
 uploadToCOS = (FilePath, Key) => {
     return new Promise((resolve, reject) => {
         cos.uploadFile({
-            Bucket: upload_config.Bucket, /* 必须 */
-            Region: upload_config.Region,    /* 存储桶所在地域，必须字段 */
-            Key: upload_config.uploadPath + Key,              /* 必须 */
-            FilePath: FilePath,                /* 必须 */
-            SliceSize: 1024 * 1024 * 10,     /* 触发分块上传的阈值，超过10MB使用分块上传，非必须 */
-            onTaskReady: function (taskId) {                   /* 非必须 */
-                // console.log(taskId);
+            Bucket: upload_config.Bucket, 
+            Region: upload_config.Region,  
+            Key: upload_config.uploadPath + Key,            
+            FilePath: FilePath,              
+            SliceSize: 1024 * 1024 * 10,   
+            onTaskReady: function (taskId) {      
             },
-            onProgress: function (progressData) {           /* 非必须 */
-                // console.log(JSON.stringify(progressData));
+            onProgress: function (progressData) {    
             },
             onFileFinish: function (err, data, options) {
-                // console.log(options.Key + '上传' + (err ? '失败' : '完成'));
             },
         }, function (err, data) {
             if (err) {
@@ -73,7 +73,6 @@ uploadToCOS = (FilePath, Key) => {
         });
     })
 }
-
 const uploadPromise = () => {
     const uploadArry = handlePath()
     uploadArry.forEach(async (item) => {
