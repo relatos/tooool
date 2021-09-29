@@ -1,0 +1,56 @@
+
+.indexbox_title{
+    /* font-size: 100px; */
+}
+.wechat{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.report-textarea-content{
+    padding: 0 20px;
+    width: 100%;
+    display: inline-block;
+}
+.main-textarea{
+    width: 100%;
+    resize:none;
+    outline:none;
+    border-radius: 10px;
+    border:1px solid #ccc;
+    padding: 5px;
+}
+.main-textarea:focus{
+    border:1px solid black;
+}
+.report-submit{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.report-submit-flex{
+    display: inline-block;
+}
+.report-submit-input{
+    border-radius: 5px;
+    background:none;  
+	outline:none;  
+	border:1px solid #ccc;
+    padding-left: 5px;
+    margin-right: 10px;
+}
+.report-submit-input:focus{   
+	border:1px solid black;
+}
+.report-submit-submit{
+    width: 40px;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}

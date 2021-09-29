@@ -392,7 +392,7 @@ $(function(){
 })
 
 
-/*$('#pub-wechat').on('click', function () {
+$('#pub-wechat-chat').on('click', function () {
 
     if($('.el-dialog').css("display")=='none'){
         $('.wx-public-dialog').addClass('el-dialog__wrapper');
@@ -403,7 +403,7 @@ $(function(){
     }
 
 })
-*/
+
 
 
 $('.wx-public-dialog').on('click', function () {
@@ -431,3 +431,25 @@ $('.botton-footer').click(function () {
         $('#yqlinks-cate-'+dataid).show();
     }
 })
+
+
+
+function addfavorite(title, url){
+    if (document.all){ 
+     try {
+            window.external.addFavorite(url,title); 
+        }
+        catch (e) {
+            alert('提示：请使用Ctrl+D进行添加,或手动在浏览器里进行设置');
+        }
+    }else if (window.sidebar){ 
+     try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert('提示：请使用Ctrl+D进行添加,或手动在浏览器里进行设置');
+        }
+    }else{
+        alert('提示：请使用Ctrl+D进行添加,或手动在浏览器里进行设置');
+    }
+} 

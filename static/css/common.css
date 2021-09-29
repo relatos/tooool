@@ -318,6 +318,7 @@
 
 .footer-new{
     display: flex;
+    justify-content: space-between;
 }
 .footer-new .about{
     /*width:400px;*/
@@ -334,8 +335,15 @@
     color: #818394;
 }
 .footer-new .about .text p a{
-    color:#818394;
+    color:#818394 !important;
 }
+.footer-new .about .text p a:link{
+    color:#818394 !important;
+}
+.footer-new .about .text p a:hover{
+    color: #ff6a00!important;
+}
+
 
 .footer-new .about .text .hzhb{
     display: inline-block;
@@ -1319,7 +1327,8 @@ padding-bottom: 0;
 .wx-public-dialog .wx-name span.icon {
     width:32px;
     height:32px;
-    background:url(../img/favicon.ico) no-repeat;
+    background:url('https://shop-1256119282.file.myqcloud.com/tooools/static/img/favicon-ebe2fd65f3.ico') no-repeat;
+    /* background:url('../img/favicon.ico') no-repeat; */
     background-size:32px 32px;
     margin-right:10px;
     border-radius:4px
@@ -1417,7 +1426,7 @@ padding-bottom: 0;
 
 
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 /*!
  * Bootstrap v4.0.0-beta.3 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
