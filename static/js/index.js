@@ -1,11 +1,35 @@
-$('.icon-search').click(function(){
+const SEARCH_FROM_ACTION = [
+    'https://www.baidu.com/s',
+    'https://kaifa.baidu.com/searchPage?',
+    'https://cn.bing.com/search?',
+    'https://weixin.sogou.com/weixin?',
+    'https://www.zhihu.com/search?type=content',
+    'https://www.google.com.hk/search?',
+]
+const SEARCH_INPUT_PLACEHOLDER = [
+    '百度一下,你就知道',
+    '专注于程序员编程的搜索',
+    '必应搜索',
+    '微信文章搜索',
+    '知乎文章搜索',
+    'Google搜索'
+]
+const SEARCH_INPUT_NAME = [
+    'wd',
+    'wd',
+    'q',
+    'query',
+    'q',
+    'q'
+]
+$('.icon-search').click(function () {
     $('.search-tab-content .active form').submit()
 })
 $('.website-list .new-item,.website-list .hot-item').click(function (e) {
-    if ( e && e.preventDefault ) {
+    if (e && e.preventDefault) {
         //阻止默认浏览器动作(W3C)
         e.preventDefault();
-    }else{
+    } else {
         //IE中阻止函数器默认动作的方式
         window.event.returnValue = false;
         return false;
@@ -14,13 +38,13 @@ $('.website-list .new-item,.website-list .hot-item').click(function (e) {
 
 })
 
-$('.fixedWidth').css('width',$('.indexbox').width()).show();
+$('.fixedWidth').css('width', $('.indexbox').width()).show();
 $('.bottomFixedAd').on('click', function () {
     $('.fixedWidth').remove()
-    if(linkid){
-        $.cookie('index_fixed_bottom_'+linkid, '1','7200000');
-    }else{
-        $.cookie('index_fixed_bottom_', '1','7200000');
+    if (linkid) {
+        $.cookie('index_fixed_bottom_' + linkid, '1', '7200000');
+    } else {
+        $.cookie('index_fixed_bottom_', '1', '7200000');
     }
 
 })
@@ -64,29 +88,63 @@ $('.current-menu strong').on('click', function () {
     });
 
 
-
 })
 
+// 微信搜索URL附加参数 type: 1为公众号2为文章
+let search_wechat_type = document.createElement('input')
+search_wechat_type.name ='type'
+search_wechat_type.value = '2'
+search_wechat_type.type = 'hidden'
+
+// 搜索引擎
 $('.search-list .li').on('click', function () {
-
-    var index = $(this).index();
-
+    let index = $(this).index();
     $('.search-list .current').removeClass('current')
-
     $(this).addClass('current');
 
-    var  inputval=$('.search-tab-content .active .form-control').val();
+    // 如果微信搜索指定文章搜索
+    if(SEARCH_INPUT_PLACEHOLDER[index] == SEARCH_INPUT_PLACEHOLDER[3]){
+        $("#other_parameter").prepend(search_wechat_type)
+    } else {
+        $("#other_parameter").empty()
+    }
+    // 搜索From&Input属性控制
+    $('#form-search').attr('action', SEARCH_FROM_ACTION[index])
+    $('#search_input').attr('placeholder', SEARCH_INPUT_PLACEHOLDER[index])
+    $('#search_input').attr('name', SEARCH_INPUT_NAME[index])
 
-    $('.search-tab-content .active').removeClass('active')
+    // 搜索引擎图标联动
+    $('#search-icon').children('.dropdown-item').removeAttr('hidden')
+    $('#search_check_btn').empty()
+    $('#search_check_btn').html($('#search-icon').children('.dropdown-item').eq(index).html())
+    $('#search-icon').children('.dropdown-item').eq(index).attr('hidden', 'hidden')
+})
 
-    $('.search-tab-content .tab-pane').eq(index).addClass('active')
+// 下拉搜索引擎
+$('#search-icon').children('.dropdown-item').on('click', function () {
+    let index = $(this).index();
+    $('#search-icon').children('.dropdown-item').removeAttr('hidden')
+    $(this).attr('hidden','hidden')
 
-    $('.search-tab-content .active .form-control').val(inputval);
+    // 如果微信搜索指定文章搜索
+    if(SEARCH_INPUT_PLACEHOLDER[index] === SEARCH_INPUT_PLACEHOLDER[3]){
+        $("#other_parameter").prepend(search_wechat_type)
+    } else {
+        $("#other_parameter").empty()
+    }
 
+    // 搜索From&Input属性控制
+    $('#form-search').attr('action', SEARCH_FROM_ACTION[index])
+    $('#search_input').attr('placeholder', SEARCH_INPUT_PLACEHOLDER[index])
+    $('#search_input').attr('name', SEARCH_INPUT_NAME[index])
+
+    $('.search-list').children('.li').removeClass('current')
+    $('.search-list').children('.li').eq(index).addClass('current')
+    $('#search_check_btn').empty()
+    $('#search_check_btn').html($(this).html())
 })
 
 $('li[data-active="fid-0"]').addClass('active');
-
 
 
 $('#pfgg').css({left: $('.main-content').offset().left - 175}).show()
@@ -96,19 +154,19 @@ var headerheight = $('#header .container').height();
 (function ($) {
 
     $('.css-tooltip-new').tipso({
-        fontsize:'16px'
+        fontsize: '16px'
     });
 
     $('.css-tooltip-news').tipso({
         background: '#000',
-        width:'450px',
-        fontsize:'12px',
-        position:'sizecenter'
+        width: '450px',
+        fontsize: '12px',
+        position: 'sizecenter'
     });
     $('.css-tooltip-newa').tipso({
         background: '#000',
-        width:'150px',
-        fontsize:'12px',
+        width: '150px',
+        fontsize: '12px',
     });
 
     var s = $('.sidebars');
@@ -126,7 +184,6 @@ var headerheight = $('#header .container').height();
     var start = 0, stop = 0, cHeight = 0;
 
 
-
     function init() {
         var soffset = s.offset();
         start = soffset.top;
@@ -135,11 +192,9 @@ var headerheight = $('#header .container').height();
     }
 
 
-
     function cinit() {
         cHeight = c.height();
     }
-
 
 
     function cClear() {
@@ -148,7 +203,6 @@ var headerheight = $('#header .container').height();
         c.removeClass('absolute');
 
     }
-
 
 
     function check_scroll() {
@@ -176,7 +230,6 @@ var headerheight = $('#header .container').height();
         }
 
     }
-
 
 
     var dl = $('.content-sidebar dl');
@@ -240,9 +293,6 @@ var headerheight = $('#header .container').height();
 })(jQuery);
 
 
-
-
-
 (function ($) {
 
     var p = $('.indexbox');
@@ -262,8 +312,6 @@ var headerheight = $('#header .container').height();
         });
 
     }
-
-
 
 
     function goto_current(index) {
@@ -291,7 +339,6 @@ var headerheight = $('#header .container').height();
         }
 
     }
-
 
 
     function window_scroll() {
@@ -340,7 +387,6 @@ var headerheight = $('#header .container').height();
     }
 
 
-
     part_offset_top();
 
     setTimeout(window_scroll, 0);
@@ -350,30 +396,30 @@ var headerheight = $('#header .container').height();
 })(jQuery);
 
 
+$(function () {
+    // 其他工具点击效果,无用暂注释掉
+    // $('.tabcheck').click(function () {
+    //     $(this).parent().find('.current').removeClass('current')
+    //     $(this).parent().parent().find('.showdiv').hide();
+    //     $(this).addClass('current')
+    //     $('#catalog_' + $(this).attr('data-id')).show()
+    // })
 
-$(function(){
-    $('.tabcheck').click(function(){
-        $(this).parent().find('.current').removeClass('current')
-        $(this).parent().parent().find('.showdiv').hide();
-        $(this).addClass('current')
-        $('#catalog_'+$(this).attr('data-id')).show()
-    })
+    $('.cygjtabs').find('strong').on('click', function () {
 
-    $('.cygjtabs').find('strong').on('click',function(){
-
-        $('#catalog_'+ $('.cygjtabs').find('.current').attr('data-id')).hide();
+        $('#catalog_' + $('.cygjtabs').find('.current').attr('data-id')).hide();
 
         $('.cygjtabs').find('.current').removeClass('current');
 
         $(this).addClass('current');
 
-        $('#catalog_'+$(this).attr('data-id')).show()
+        $('#catalog_' + $(this).attr('data-id')).show()
 
     })
 
     //锚点跳转滑动效果
 
-    $('#goto').find('dd').find('a').click(function() {
+    $('#goto').find('dd').find('a').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length && target;
@@ -394,62 +440,57 @@ $(function(){
 
 $('#pub-wechat-chat').on('click', function () {
 
-    if($('.el-dialog').css("display")=='none'){
+    if ($('.el-dialog').css("display") == 'none') {
         $('.wx-public-dialog').addClass('el-dialog__wrapper');
-        $('.el-dialog').css("display","block");
-    }else {
+        $('.el-dialog').css("display", "block");
+    } else {
         $('.wx-public-dialog').removeClass('el-dialog__wrapper');
-        $('.el-dialog').css("display","none");
+        $('.el-dialog').css("display", "none");
     }
 
 })
 
 
-
 $('.wx-public-dialog').on('click', function () {
-        $('.wx-public-dialog').removeClass('el-dialog__wrapper');
-        $('.el-dialog').css("display","none");
+    $('.wx-public-dialog').removeClass('el-dialog__wrapper');
+    $('.el-dialog').css("display", "none");
 })
 
 
-
-$("#logo-1").hover(function(){
-    $("#hover-logo").css("display","block");
-},function(){
-    $("#hover-logo").css("display","none");
+$("#logo-1").hover(function () {
+    $("#hover-logo").css("display", "block");
+}, function () {
+    $("#hover-logo").css("display", "none");
 });
 
 $('.botton-footer').click(function () {
     $('.footer_btnbox .active').removeClass('active')
     $(this).addClass('active')
-    let dataid =    $(this).attr('data');
+    let dataid = $(this).attr('data');
     if (dataid == '-1') {
         $('.links-box').hide();
         $('#yqlinks-cate-00').show();
-    }else{
+    } else {
         $('.links-box').hide();
-        $('#yqlinks-cate-'+dataid).show();
+        $('#yqlinks-cate-' + dataid).show();
     }
 })
 
 
-
-function addfavorite(title, url){
-    if (document.all){ 
-     try {
-            window.external.addFavorite(url,title); 
-        }
-        catch (e) {
+function addfavorite(title, url) {
+    if (document.all) {
+        try {
+            window.external.addFavorite(url, title);
+        } catch (e) {
             alert('提示：请使用Ctrl+D进行添加,或手动在浏览器里进行设置');
         }
-    }else if (window.sidebar){ 
-     try {
+    } else if (window.sidebar) {
+        try {
             window.sidebar.addPanel(title, url, "");
-        }
-        catch (e) {
+        } catch (e) {
             alert('提示：请使用Ctrl+D进行添加,或手动在浏览器里进行设置');
         }
-    }else{
+    } else {
         alert('提示：请使用Ctrl+D进行添加,或手动在浏览器里进行设置');
     }
-} 
+}

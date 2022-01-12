@@ -1287,7 +1287,7 @@ padding-bottom: 0;
     width:320px;
     height:80px;
     border-radius:12px 12px 0 0;
-    background:url(../img/wechat/public_wx_bg.png) no-repeat;
+    background:url('https://shop-1256119282.file.myqcloud.com/tooools/static/img/wechat/public_wx_bg-e0a863ced9.png') no-repeat;
     background-size:320px 80px
 }
 .wx-public-dialog .top p {

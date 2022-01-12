@@ -984,6 +984,19 @@ width:33%;
         width: 92% !important;
     }
 }
+/*顶部搜索框按钮样式 start */
+.btn-search {
+    color: #595b69;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #ced4da;
+}
+.btn-search:hover {
+    color: black;
+    background-color: #ced4da;
+    background-image: none;
+    border: 1px solid #ced4da;
+}
 .search-sbmit {
     position: absolute;
     top: 0;
@@ -2086,7 +2099,8 @@ website-lists li .linkcard {
     }
     .search_box{
         width:35%;
-        margin-right:5%;
+        padding: 0 10px;
+        /*margin-right:5%;*/
     }
     ul.icon_toplist li {
         position: relative;
