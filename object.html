@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.cxy521.com">
+    <meta name="keywords"
+        content="Cxy521,程序员我爱你,程序员导航,程序员一站式导航网站,在线工具,程序员,工具,开发人员工具,小工具,站长工具,代码格式化、压缩、加密、解密,下载链接转换,字帖,田字格,进制转换,二维码" />
+
+    <meta name="description" content="CXY521(程序员我爱你)是一个致力于一站式程序员学习工作娱乐导航网站，以让程序员更便捷为使命，始终围绕程序员需求，为程序员提供最新工具导航" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>程序员导航-CXY521</title>
+    <link rel="shortcut icon" href="./static/img/favicon.ico">
+    <link rel="icon" sizes="32x32" href="./static/img/favicon.ico">
+    <link rel="Bookmark" href="./static/img/favicon.ico">
+
+    <link rel="stylesheet" href="./static/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/common.css">
+
+    <link href="./static/css/web.7d867cb061dfb73f82bf5fdf9654c67d.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        /*包含以下四种的链接*/
+        a {
+            text-decoration: none;
+            color: #818394;
+        }
+        
+        /*正常的未被访问过的链接*/
+        a:link {
+            text-decoration: none;
+            color: #818394;
+        }
+        
+        /*已经访问过的链接*/
+        a:visited {
+            text-decoration: none;
+            color: #818394;
+        }
+        
+        /*鼠标划过(停留)的链接*/
+        a:hover {
+            text-decoration: none;
+            color: #818394;
+        }
+        
+        /* 正在点击的链接*/
+        a:active {
+            text-decoration: none;
+        }
+        
+        
+        .wx-public-container2 .el-dialog2 {
+            width:320px;
+            height:380px;
+            border-radius:12px;
+            margin-top:20vh!important;
+            background: #FFF;
+        }
+        .wx-public-container2 .el-dialog2 .el-dialog__header {
+
+            display:none
+        }
+        .wx-public-container2 .el-dialog2 .el-dialog__body {
+            color: #606266;
+            font-size: 14px;
+            word-break: break-all;
+            padding:0
+        }
+
+        .wx-public-dialog2 .top {
+            width:320px;
+            height:80px;
+            border-radius:12px 12px 0 0;
+            background:url('https://shop-1256119282.file.myqcloud.com/tooools/static/img/wechat/public_wx_bg-e0a863ced9.png') no-repeat;
+            background-size:320px 80px
+        }
+        .wx-public-dialog2 .top p {
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+            font-size:22px;
+            color:#fff;
+            font-weight:700;
+            letter-spacing:2px;
+            text-align:center;
+            line-height:80px
+        }
+        .wx-public-dialog2 .qrcode {
+            width:197px;
+            height:197px;
+            margin:0 auto;
+            margin-top:24px
+        }
+        .wx-public-dialog2 .qrcode>img {
+            width:197px;
+            height:197px;
+            border:2px solid #2777ff
+        }
+        .wx-public-dialog2 .wx-name {
+            text-align:center;
+            font-size:0;
+            margin-top:20px
+        }
+        .wx-public-dialog2 .wx-name span {
+            display:inline-block;
+            font-size:16px;
+            vertical-align:middle;
+            color:#262729
+        }
+        .wx-public-dialog2 .wx-name span.icon {
+            width:32px;
+            height:32px;
+            background:url('https://shop-1256119282.file.myqcloud.com/tooools/static/img/favicon-ebe2fd65f3.ico') no-repeat;
+            /* background:url('../img/favicon.ico') no-repeat; */
+            background-size:32px 32px;
+            margin-right:10px;
+            border-radius:4px
+        }
+
+        .el-dialog2 {
+            position: relative;
+            margin: 0 auto 50px;
+            border-radius: 2px;
+            -webkit-box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+            box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+            box-sizing: border-box;
+            width: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark" id="header">
+        <div class="container">
+            <div class="main-content" style="position:relative"></div>
+
+            <a id="logo-1" class="navbar-brand text-truncate" href="/" title="拖动 LOGO 到书签栏, 立即收藏 CXY521">
+                <img src="./static/img/logo521.png" class="logo-2" alt="程序员一站式导航" title="拖动 LOGO 到书签栏, 立即收藏 CXY521">
+            </a>
+            <div class="d-none d-lg-block">
+                <span id="hover-logo" class="g-popover g-popover--light" style="display: none;">
+                    <div class="gdd-favorite-guide gdd-favorite-guide__dark" style="top: 16px; width: 318px;">
+                        <div class="gdd-favorite-guide__arrow">
+                            <div class="gdd-favorite-guide__arrow--stem"></div>
+                            <div class="gdd-favorite-guide__arrow--head"></div>
+                        </div>
+                        <div class="gdd-favorite-guide__content">
+                            拖动 Logo 到书签栏, 立即收藏 CXY521
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
+                aria-controls="navbar_collapse" aria-expanded="false" aria-label="展开菜单">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="dropdown">
+                        <a href="index.html" href="wechat.html" class="nav-link demo1">首页<span class="caret"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="manual.html" href="wechat.html" class="nav-link demo1">手册<span
+                                class="caret"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a id="pub-book" href="book.html" class="nav-link demo1">书籍<span class="caret"></span></a>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a id="pub-wechat-" href="wechat.html" class="nav-link demo1">公号<span class="caret"></span></a>
+                    </li> -->
+                    <!-- <li class="dropdown">
+                        <a id="pub-dating" href="http://cxy521.com/dating2.html" class="nav-link demo1">脱单<span class="caret"></span></a>
+                    </li> -->
+                    <li class="dropdown">
+                        <a id="pub-dating" href="object.html" class="nav-link demo1">脱单<span class="caret"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a id="pub-wechat-chat" href="#" class="nav-link demo1">交流群<span class="caret"></span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <!--    <li class="nav-item">
+                    <a class="nav-link" href="https://mp.weixin.qq.com/s/l0DVPk8Z3DtdHTYsWymP1A" target="_blank">国旗头像</a>
+                </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.24kdh.com" target="_blank">24k导航</a>
+                    </li>
+
+                    <!--                 <li class="nav-item">
+                  <a class="nav-link"  href="javascript:void(0)" onclick="addfavorite('amz520',location.href)">网站收藏</a>
+                </li> -->
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+    <main id="body" >
+                <div data-v-4f545bf4="" class="banners">
+                    <div data-v-4f545bf4="" class="el-carousel el-carousel--horizontal">
+                        <div class="el-carousel__container" style="height: 300px;"><button type="button"
+                                class="el-carousel__arrow el-carousel__arrow--left" style="display: none;"><i
+                                    class="el-icon-arrow-left"></i></button><button type="button"
+                                class="el-carousel__arrow el-carousel__arrow--right" style="display: none;"><i
+                                    class="el-icon-arrow-right"></i></button>
+                            <div data-v-4f545bf4="" class="el-carousel__item is-animating"
+                                style="">
+                                <!----><img data-v-4f545bf4="" src="./static/banner1.png" alt="" class="banner-itme">
+                            </div>
+                            <div data-v-4f545bf4="" class="el-carousel__item is-animating"
+                                style="display: none;" >
+                                <!----><img data-v-4f545bf4="" src="./static/banner2.png" alt="" class="banner-itme">
+                            </div>
+                        </div>
+                        <ul class="el-carousel__indicators el-carousel__indicators--horizontal">
+                            <li class="el-carousel__indicator el-carousel__indicator--horizontal is-active"><button
+                                    class="el-carousel__button">
+                                    <!----></button></li>
+                            <li class="el-carousel__indicator el-carousel__indicator--horizontal"><button
+                                    class="el-carousel__button">
+                                    <!----></button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div data-v-4f545bf4="" class="tabs">
+                    <div data-v-4f545bf4="" class="tab-main">
+                        <div data-v-4f545bf4="" class="tab-b" onclick="showGirls()"><img data-v-4f545bf4="" src="./static/woman.png" alt="">
+                            <span data-v-4f545bf4="">女嘉宾</span></div>
+                        <div data-v-4f545bf4="" class="tab-c">
+                            <a href="https://mp.weixin.qq.com/s/mBrgkZR8ADdd4Ju-tMemTg" target="_blank"
+                                                    style="color:#444 !important">
+                                <img data-v-4f545bf4="" src="./static/loves.png"
+                                alt=""><span data-v-4f545bf4="">立即脱单</span>
+                             </a>
+                        </div>
+                        <div data-v-4f545bf4="" class="tab-b" onclick="showBoys()"><img data-v-4f545bf4="" src="./static/man.png"
+                                alt=""><span data-v-4f545bf4="">男嘉宾</span></div>
+                    </div>
+                </div>
+
+                <!--女嘉宾-->
+                <div data-v-4f545bf4="" class="main-list-out" id="girlDiv">
+                    <div data-v-4f545bf4="" class="main-list">
+                        <a href="https://mp.weixin.qq.com/s/I8qOoFlmIOl1mgTo_mKZOA" target="_blank" style="color:#444 !important">
+                        <div data-v-4f545bf4="" class="item-main">
+                            <div data-v-4f545bf4="" class="item-img"><img data-v-4f545bf4="" src="./static/woman/1.png"
+                                    alt=""></div>
+                            <div data-v-4f545bf4="" class="nick-name">
+                                <div data-v-4f545bf4="">小米爷</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-age">
+                                <div data-v-4f545bf4="">29</div>
+                                <div data-v-4f545bf4="">长沙</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-occupation">
+                                <div data-v-4f545bf4="">教师</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-level">
+                                <div data-v-4f545bf4="">本科</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/Xh9XePUXMQc8kgo9CXdF6A" target="_blank" style="color:#444 !important">
+                        <div data-v-4f545bf4="" class="item-main">
+                            <div data-v-4f545bf4="" class="item-img"><img data-v-4f545bf4="" src="./static/woman/2.jpg"
+                                    alt=""></div>
+                            <div data-v-4f545bf4="" class="nick-name">
+                                <div data-v-4f545bf4="">星星</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-age">
+                                <div data-v-4f545bf4="">24</div>
+                                <div data-v-4f545bf4="">长沙</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-occupation">
+                                <div data-v-4f545bf4="">教育</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-level">
+                                <div data-v-4f545bf4="">本科</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/hb5WA9cy376V10-aOh6IvQ" target="_blank" style="color:#444 !important">
+                        <div data-v-4f545bf4="" class="item-main">
+                            <div data-v-4f545bf4="" class="item-img"><img data-v-4f545bf4="" src="./static/woman/3.png"
+                                    alt=""></div>
+                            <div data-v-4f545bf4="" class="nick-name">
+                                <div data-v-4f545bf4="">橘子</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-age">
+                                <div data-v-4f545bf4="">28</div>
+                                <div data-v-4f545bf4="">成都</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-occupation">
+                                <div data-v-4f545bf4="">客服</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-level">
+                                <div data-v-4f545bf4="">大专（自考本科中……）</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/oqdGe5xZBbCA6uVX81-UXw" target="_blank" style="color:#444 !important">
+                        <div data-v-4f545bf4="" class="item-main">
+                            <div data-v-4f545bf4="" class="item-img"><img data-v-4f545bf4="" src="./static/woman/4.png"
+                                    alt=""></div>
+                            <div data-v-4f545bf4="" class="nick-name">
+                                <div data-v-4f545bf4="">嗝</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-age">
+                                <div data-v-4f545bf4="">24</div>
+                                <div data-v-4f545bf4="">成都</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-occupation">
+                                <div data-v-4f545bf4="">银行</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-level">
+                                <div data-v-4f545bf4="">本科</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/jhaBFeNj2R91rzZU598JSw" target="_blank" style="color:#444 !important">
+                        <div data-v-4f545bf4="" class="item-main">
+                            <div data-v-4f545bf4="" class="item-img"><img data-v-4f545bf4="" src="./static/woman/5.png"
+                                    alt=""></div>
+                            <div data-v-4f545bf4="" class="nick-name">
+                                <div data-v-4f545bf4="">派大星</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-age">
+                                <div data-v-4f545bf4="">24</div>
+                                <div data-v-4f545bf4="">杭州</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-occupation">
+                                <div data-v-4f545bf4="">财务</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-level">
+                                <div data-v-4f545bf4="">专科</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/nM8n2uVpzZ_7GDv0Dchfyg" target="_blank" style="color:#444 !important">
+                        <div data-v-4f545bf4="" class="item-main">
+                            <div data-v-4f545bf4="" class="item-img"><img data-v-4f545bf4="" src="./static/woman/6.png"
+                                    alt=""></div>
+                            <div data-v-4f545bf4="" class="nick-name">
+                                <div data-v-4f545bf4="">小胖纸</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-age">
+                                <div data-v-4f545bf4="">28</div>
+                                <div data-v-4f545bf4="">上海</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-occupation">
+                                <div data-v-4f545bf4="">互联网</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-level">
+                                <div data-v-4f545bf4="">本科</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/OnLwNP5gazhzBWKOiZtdvg" target="_blank" style="color:#444 !important">
+                        <div data-v-4f545bf4="" class="item-main">
+                            <div data-v-4f545bf4="" class="item-img"><img data-v-4f545bf4="" src="./static/woman/7.png"
+                                    alt=""></div>
+                            <div data-v-4f545bf4="" class="nick-name">
+                                <div data-v-4f545bf4="">骑拖把的兔子</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-age">
+                                <div data-v-4f545bf4="">25</div>
+                                <div data-v-4f545bf4="">济南</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-occupation">
+                                <div data-v-4f545bf4="">社区</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-level">
+                                <div data-v-4f545bf4="">本科</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/2sL-npxqZmim9_hUCFTjAg" target="_blank" style="color:#444 !important">
+                        <div data-v-4f545bf4="" class="item-main">
+                            <div data-v-4f545bf4="" class="item-img"><img data-v-4f545bf4="" src="./static/woman/8.png"
+                                    alt=""></div>
+                            <div data-v-4f545bf4="" class="nick-name">
+                                <div data-v-4f545bf4="">梦雨</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-age">
+                                <div data-v-4f545bf4="">25</div>
+                                <div data-v-4f545bf4="">成都</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-occupation">
+                                <div data-v-4f545bf4="">学生</div>
+                            </div>
+                            <div data-v-4f545bf4="" class="nike-level">
+                                <div data-v-4f545bf4="">硕士</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-v-4f545bf4="" class="main-list-out"  id="boyDiv" style="display: none;">
+                    <div data-v-4f545bf4="" class="main-list">
+                        <a href="https://mp.weixin.qq.com/s/a5HtsI0kP_jMTaKlBDVDTw" target="_blank" style="color:#444 !important">
+                            <div data-v-4f545bf4="" class="item-main">
+                                <div data-v-4f545bf4="" class="item-img">
+                                    <img data-v-4f545bf4="" src="./static/man/1.png" alt="">
+                                </div> 
+                                <div data-v-4f545bf4="" class="nick-name">
+                                    <div data-v-4f545bf4="">T.R</div>
+                                </div> 
+                                <div data-v-4f545bf4="" class="nike-age">
+                                    <div data-v-4f545bf4="">32</div>
+                                </div> 
+                                <div data-v-4f545bf4="" class="nike-city">
+                                    <div data-v-4f545bf4="">温州苍南/杭州</div>
+                                </div> 
+                                <div data-v-4f545bf4="" class="nike-occupation">
+                                    <div data-v-4f545bf4="">电商</div>
+                                </div> 
+                                <div data-v-4f545bf4="" class="nike-level">
+                                    <div data-v-4f545bf4="">专科</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/yu9wuUUu8ywcKRP7mpHoRg" target="_blank" style="color:#444 !important"></a>
+                            <div data-v-4f545bf4="" class="item-main">
+                                <div data-v-4f545bf4="" class="item-img">
+                                    <img data-v-4f545bf4="" src="./static/man/2.png" alt="">
+                                </div> 
+                                <div data-v-4f545bf4="" class="nick-name">
+                                    <div data-v-4f545bf4="">一颗苹果</div>
+                                </div> 
+                                <div data-v-4f545bf4="" class="nike-age">
+                                    <div data-v-4f545bf4="">27</div>
+                                </div> 
+                                <div data-v-4f545bf4="" class="nike-city">
+                                    <div data-v-4f545bf4="">东莞</div>
+                                </div> 
+                                <div data-v-4f545bf4="" class="nike-occupation">
+                                    <div data-v-4f545bf4="">UI设计</div>
+                                </div> 
+                                <div data-v-4f545bf4="" class="nike-level">
+                                    <div data-v-4f545bf4="">专科</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-v-4f545bf4="" class="mores">
+                    <div data-v-4f545bf4="" id="showMore">加载更多</div>
+                </div>
+
+                <div data-v-4f545bf4="" class="more">
+                    <div data-v-4f545bf4="" class="more-main">
+                        <div data-v-4f545bf4="" class="item-div1 pictureWidthOne pictureShadowOne one"><img
+                                data-v-4f545bf4="" src="./static/woman/1.png" alt=""
+                                class="more-picture pictureWidthOne"> <span data-v-4f545bf4=""
+                                class="item-city">长沙</span>
+                            <div data-v-4f545bf4="" class="item-name">小米爷</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div1 pictureWidthOne pictureShadowOne two"><img
+                                data-v-4f545bf4="" src="./static/woman/2.jpg" alt=""
+                                class="more-picture pictureWidthOne"> <span data-v-4f545bf4=""
+                                class="item-city">长沙</span>
+                            <div data-v-4f545bf4="" class="item-name">星星</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div1 pictureWidthOne pictureShadowTwo three"><img
+                                data-v-4f545bf4="" src="./static/woman/3.png" alt=""
+                                class="more-picture pictureWidthOne"> <span data-v-4f545bf4=""
+                                class="item-city">成都</span>
+                            <div data-v-4f545bf4="" class="item-name">橘子</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div2 pictureWidthTwo pictureShadowTwo four"><img
+                                data-v-4f545bf4="" src="./static/woman/4.png" alt=""
+                                class="more-picture pictureWidthTwo"> <span data-v-4f545bf4=""
+                                class="item-city">成都</span>
+                            <div data-v-4f545bf4="" class="item-name">嗝</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div2 pictureWidthTwo pictureShadowOne five"><img
+                                data-v-4f545bf4="" src="./static/woman/5.png" alt=""
+                                class="more-picture pictureWidthTwo"> <span data-v-4f545bf4=""
+                                class="item-city">杭州</span>
+                            <div data-v-4f545bf4="" class="item-name">派大星</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div2 pictureWidthTwo pictureShadowTwo six"><img
+                                data-v-4f545bf4="" src="./static/woman/6.png" alt=""
+                                class="more-picture pictureWidthTwo"> <span data-v-4f545bf4=""
+                                class="item-city">上海</span>
+                            <div data-v-4f545bf4="" class="item-name">小胖纸</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div4 pictureWidthThree pictureShadowTwo seven"><img
+                                data-v-4f545bf4="" src="./static/woman/7.png" alt=""
+                                class="more-picture pictureWidthThree"> <span data-v-4f545bf4=""
+                                class="item-city">济南</span>
+                            <div data-v-4f545bf4="" class="item-name">骑拖把的兔子</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div3 pictureWidthOne pictureShadowOne eight"><img
+                                data-v-4f545bf4="" src="./static/woman/8.png" alt=""
+                                class="more-picture pictureWidthOne"> <span data-v-4f545bf4=""
+                                class="item-city">成都</span>
+                            <div data-v-4f545bf4="" class="item-name">梦雨</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div3 pictureWidthOne pictureShadowTwo nine"><img
+                                data-v-4f545bf4="" src="./static/woman/9.png" alt=""
+                                class="more-picture pictureWidthOne"> <span data-v-4f545bf4=""
+                                class="item-city">广州</span>
+                            <div data-v-4f545bf4="" class="item-name">向阳花</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div4 pictureWidthThree pictureShadowOne ten"><img
+                                data-v-4f545bf4="" src="./static/woman/10.png" alt=""
+                                class="more-picture pictureWidthThree"> <span data-v-4f545bf4=""
+                                class="item-city">北京</span>
+                            <div data-v-4f545bf4="" class="item-name">飞儿</div>
+                        </div>
+                        <div data-v-4f545bf4="" class="item-div4 pictureWidthThree pictureShadowTwo eleven"><img
+                                data-v-4f545bf4="" src="./static/woman/11.png" alt=""
+                                class="more-picture pictureWidthThree"> <span data-v-4f545bf4=""
+                                class="item-city">北京</span>
+                            <div data-v-4f545bf4="" class="item-name">July</div>
+                        </div>
+                    </div>
+                    <div data-v-4f545bf4="" class="more-background"><img data-v-4f545bf4=""
+                            src="./static/more/peach.png" alt=""></div>
+                </div>
+    </main>
+
+
+    <footer class="text-muted small bg-dark py-4 mt-3 d-none d-lg-block" id="footer"
+        style="background:#222c3c !important">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="">
+                        <div class="footer-new">
+                            <div class="about" style="width: 20%;">
+                                <img src="./static/img/logo.png" alt="程序员一站式导航" style="width: 100%; height: auto;" />
+                            </div>
+                            <div class="about" style="width: 444px;">
+                                <h2>关于</h2>
+                                <div class="text">
+                                    CXY521 专注程序员一站式导航，提供最精华有趣的内容&nbsp;。 本站仅为网址导航，网站来源于网络，对其内容不负任何责任，若有问题，请联系我们。
+                                </div>
+                            </div>
+                            <div class="about" style="width: 100px;">
+                                <h2>友情链接</h2>
+                                <div class="text">
+                                    <p><a href="https://www.24kdh.com/" target="_blank" style="color:#eee">24K导航</a></p>
+                                    <p><a href="http://www.buhuixiao.com/" target="_blank" style="color:#eee">不会笑青年</a>
+                                    </p>
+                                    <p><a href="http://www.ityouknow.com/" target="_blank" style="color:#eee">纯洁的微笑</a>
+                                    </p>
+                                    <!-- <p><a href="/about" target="_blank">关于我们</a></p>
+                                <p><a href="contact" target="_blank">联系我们</a></p> -->
+                                </div>
+                            </div>
+                            <div class="about">
+                                <h2>公众号
+                                    <!-- &amp;小程序 -->
+                                </h2>
+                                <div class="">
+                                    <div class="text">
+                                        <div class="" id="t1">
+                                            <p><img src="./static/img/wechat/erweima.jpg" class="appdown"
+                                                    style="width:108px;height:108px">
+                                            </p>
+                                            <p style="padding-bottom: 0;">回复521进群摸鱼</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="qrmain">
+                                <div class="qrbox">
+                                    <div class="qrcodepos" id="t1" style="">
+                                        <div><img src="./static/img/wechat/laughyouth.jpg" class="appdown" style="width:108px;height:108px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            </div>
+                            <!-- <div class="about" style="text-align: center; width: 200px;">
+                            <h2>程序员摸鱼群</h2>
+                            <div class="text">
+                                <p style="">
+                                  <img src="./static/img/wechat/laughyouth.jpg"" class="appdown" style="width:108px;height:108px;margin-top: 13px">
+                                </p>
+                            </div>
+                            <p style="">回复521开启摸鱼</p>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div style="background: #2b374c;color:#818394;padding:12px;font-size:12px;" class="d-none  d-lg-block" id="footer">
+        <div class="container">
+            <!-- <div class="footer_btnbox">
+            <div class="botton-footer active" data="-1">Copyright</div>
+            <div class="botton-footer" data="0">友情链接</div>
+        </div> -->
+            <div align="left" id="yqlinks-cate-00" class=" links-box">
+                Copyright © 2021-2022 &nbsp; &nbsp;
+                <a href="http://www.cxy521.com">
+                    <span style="color: #868e96;">程序员一站式导航</span>
+                </a>&nbsp; &nbsp;
+                <a href="http://beian.miit.gov.cn">
+                    <span style="color: #868e96;">京ICP备15067287号-4</span>
+                </a>&nbsp; &nbsp; 声明：网站上的服务均为第三方提供，与CXY521无关。请用户注意甄别服务质量，避免上当受骗。
+            </div>
+            <!-- <div class="time_content  links-box" style="display: none;" id="yqlinks-cate-0">
+            <div style="line-height: 20px;">
+                友情链接：&nbsp;
+                 <a href="https://www.24kdh.com/" target="_blank" style="color:#eee">24K导航</a>&nbsp; &nbsp;
+                 <a href="http://www.buhuixiao.com/" target="_blank" style="color:#eee">不会笑青年</a>&nbsp; &nbsp;
+                 <a href="http://www.ityouknow.com/" target="_blank" style="color:#eee">纯洁的微笑</a>&nbsp; &nbsp;
+            </div>
+        </div> -->
+        </div>
+    </div>
+
+
+    <div class="wx-public-container">
+        <div class="wx-public-dialog" style="z-index: 2009;">
+            <div class="el-dialog" style="display: none;">
+                <div class="el-dialog__header">
+                    <span class="el-dialog__title"></span>
+                </div>
+                <div class="el-dialog__body">
+                    <div class="top">
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <div class="qrcode">
+                        <!-- <img src="./static/img/wechat/laughyouth.jpg" alt="不会笑青年公众号"> -->
+                        <img src="./static/img/wechat/erweima.jpg" alt="程序员指南公众号">
+                    </div>
+                    <div class="wx-name">
+                        <span class="icon"></span>
+                        <span>关注后回复：521，进群交流</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wx-public-container2" id="more">
+        <div class="wx-public-dialog2" style="z-index: 2009;">
+            <div class="el-dialog2" style="display: none;">
+                <div class="el-dialog__header">
+                    <span class="el-dialog__title"></span>
+                </div>
+                <div class="el-dialog__body">
+                    <div class="top">
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <div class="qrcode">
+                        <!-- <img src="./static/img/wechat/laughyouth.jpg" alt="不会笑青年公众号"> -->
+                        <img src="./static/qrcode.bmp" alt="程序员脱单计划">
+                    </div>
+                    <div class="wx-name">
+                        <span class="icon"></span>
+                        <span>了解更多：程序员脱单计划</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/js/tipso.min.js"></script>
+    <script type="text/javascript" src="./static/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./static/js/girls/bootstrap.min.js"></script>
+    <script>
+        function showGirls(){
+            $("#boyDiv").css('display','none'); 
+            $("#girlDiv").css('display','flex'); 
+           // $(".main-list-out").css('justify-content','center');
+        }
+
+        function showBoys(){
+            $("#girlDiv").css('display','none'); 
+            $("#boyDiv").css('display','flex'); 
+            //$(".main-list-out").css('justify-content','center');
+        }
+
+        $('#showMore').on('click', function () {
+
+            if ($('.el-dialog2').css("display") == 'none') {
+                $('#more').addClass('el-dialog__wrapper');
+                $('.el-dialog2').css("display", "block");
+            } else {
+                $('#more').removeClass('el-dialog__wrapper');
+                $('.el-dialog2').css("display", "none");
+            }
+
+        })
+
+        $('#more').on('click', function () {
+            $('#more').removeClass('el-dialog__wrapper');
+            $('.el-dialog2').css("display", "none");
+        })
+
+        var bannerNum = 0;
+        setInterval(function(){
+            var banners = $(".el-carousel__item");
+            $(banners[bannerNum]).animate({width: 'toggle'}, 500);
+            //重置计数
+            if(bannerNum == banners.length-1){
+                bannerNum = 0;
+                $(banners[0]).animate({width: 'toggle'}, 500);
+            }else{
+                $(banners[bannerNum+1]).animate({width: 'toggle'}, 500);
+            }
+            bannerNum++;
+        },3000);
+        
+        
+
+        
+
+
+    </script>
+
+    <!-- <script type="text/javascript" src="./static/js/manifest.0c1cd46d93b12dcd0191.js"></script>
+    <script type="text/javascript" src="./static/js/vendor.c2eff075b4e0495caf70.js"></script>
+    <script type="text/javascript" src="./static/js/web.8e885189abc8d2d4a6f2.js"></script> -->
+
+
+    <div style="display: none;">
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?195b6796d001b750b1bf8e507b220b98";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
