@@ -1161,6 +1161,7 @@ padding-bottom: 0;
     .content-sidebar.fixed {
         position: fixed;
         top: 8px;
+        margin-top: 55px;
         /*width:110px;*/
         /*padding:20px;*/
         /*text-align: center;*/
