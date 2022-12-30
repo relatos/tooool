@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://www.cxy521.com">
+  <meta name="keywords"
+    content="Cxy521,技术公众号，程序员我爱你,程序员导航,程序员一站式导航网站,在线工具,程序员,工具,开发人员工具,小工具,站长工具,代码格式化、压缩、加密、解密,下载链接转换,字帖,田字格,进制转换,二维码" />
+
+  <meta name="description" content="CXY521(程序员我爱你)是一个致力于一站式程序员学习工作娱乐导航网站，以让程序员更便捷为使命，始终围绕程序员需求，为程序员提供最新工具导航" />
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title>程序员导航-Java工具</title>
+  <link rel="shortcut icon" href="./static/img/favicon.ico">
+  <link rel="icon" sizes="32x32" href="./static/img/favicon.ico">
+  <link rel="Bookmark" href="./static/img/favicon.ico">
+
+  <link rel="stylesheet" href="./static/css/bootstrap.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=1.01">
+  <link rel="stylesheet" href="./static/css/common.css?v=1.01">
+
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="header">
+    <div class="container">
+
+      <a id="logo-1" class="navbar-brand text-truncate" href="/" title="拖动 LOGO 到书签栏, 立即收藏 CXY521">
+        <img src="./static/img/logo521.png" class="logo-2" alt="程序员一站式导航" title="拖动 LOGO 到书签栏, 立即收藏 CXY521">
+      </a>
+      <div class="d-none d-lg-block">
+        <span id="hover-logo" class="g-popover g-popover--light" style="display: none;">
+          <div class="gdd-favorite-guide gdd-favorite-guide__dark" style="top: 16px; width: 318px;">
+            <div class="gdd-favorite-guide__arrow">
+              <div class="gdd-favorite-guide__arrow--stem"></div>
+              <div class="gdd-favorite-guide__arrow--head"></div>
+            </div>
+            <div class="gdd-favorite-guide__content">
+              拖动 Logo 到书签栏, 立即收藏 CXY521
+            </div>
+          </div>
+        </span>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
+        aria-controls="navbar_collapse" aria-expanded="false" aria-label="展开菜单">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav mr-auto">
+          <li class="dropdown">
+            <a href="index.html" href="wechat.html" class="nav-link demo1">首页<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a href="article.html" class="nav-link demo1">推荐<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a href="manual.html" href="wechat.html" class="nav-link demo1">手册<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a id="pub-book" href="book.html" class="nav-link demo1">书籍<span class="caret"></span></a>
+          </li>
+          <!-- <li class="dropdown">
+            <a id="pub-wechat-" href="wechat.html" class="nav-link demo1">公号<span class="caret"></span></a>
+          </li> -->
+          <li class="dropdown">
+            <a id="pub-dating" href="java.html" class="nav-link demo1">Java<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a id="pub-dating" href="python.html" class="nav-link demo1">Python<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a id="pub-dating" href="object.html" class="nav-link demo1">脱单<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a id="pub-wechat-chat" href="#" class="nav-link demo1">交流群<span class="caret"></span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="dropdown">
+              <a id="pub-wechat-chat" href="https://mp.weixin.qq.com/s/bscD8BoVk4ZUv9TJL1iK2A" target="_blank"  class="nav-link demo1">星球<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+               <a id="pub-wechat-chat" href="https://mp.weixin.qq.com/s/dl_PChAbbWmBMYnkEeWMnQ" target="_blank"  class="nav-link demo1">闲鱼<span class="caret"></span></a>
+           </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://www.24kdh.com" target="_blank">24k导航</a>
+          </li>
+      </ul>
+
+      </div>
+    </div>
+  </header>
+
+  <main id="body" style="margin-top: 55px;">
+    <div class="container">
+      <div class="container1">
+
+
+        <div class="row1">
+
+          <div class="leftcl">
+            <div class="col-md-1s sidebars">
+              <div class="content-sidebar">
+                <dl id="goto">
+                  <dt>
+                    <span class="show-list"></span>
+                  </dt>
+                  <dd class="">
+                    <a href="#must" class="auto-scroll" data-offset="-20" data-speed="500">开发必备</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#basic" class="auto-scroll" data-offset="-20" data-speed="500">基础框架</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#up" class="auto-scroll" data-offset="-20" data-speed="500">高级框架</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#package" class="auto-scroll" data-offset="-20" data-speed="500">开发利器</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#middle" class="auto-scroll" data-offset="-20" data-speed="500">中间件</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#database" class="auto-scroll" data-offset="-20" data-speed="500">数据库</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#better" class="auto-scroll" data-offset="-20" data-speed="500">性能优化</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#open" class="auto-scroll" data-offset="-20" data-speed="500">优秀开源</a>
+                  </dd>
+
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="main-container">
+              <div class="main-content" style="position:relative">
+
+                <!--开发必备-->
+                <div class="indexbox fNAV 0" id="must" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">开发必备</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/jdk.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.oracle.com/java/technologies/downloads/archive/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">JDK</a>
+                              <p class="description">Java的运行环境（Jvm+Java类库）</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/must/eclipse.png"></div>
+                            <div class="contents">
+                              <a href="https://www.eclipse.org/downloads/packages/release/oxygen/3a" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                Eclipse
+                              </a>
+                              <p class="description">老牌 Java 编辑器,用户量很广</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/idea.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.jetbrains.com/idea/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">IntelliJ IDEA</a>
+                              <p class="description">最流行的Java开发编辑器</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/spring-init.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://start.spring.io/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Spring Boot脚手架</a>
+                              <p class="description">Spring Boot官方发布的脚手架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/spring-init-ali.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://start.aliyun.com/bootstrap.html" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">Java工程脚手架</a>
+                              <p class="description">阿里开发的Java工程脚手架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/jdgui.png">
+                            </div>
+                            <div class="contents">
+                              <a href="http://java-decompiler.github.io/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">jdgui</a>
+                              <p class="description">java 反编译利器</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/dex2jar.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://sourceforge.net/projects/dex2jar/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">dex2jar</a>
+                              <p class="description">Android反编译利器</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/maven.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://maven.apache.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Maven</a>
+                              <p class="description">最流行jar包管理工具之一</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/mvn-rep.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://mvnrepository.com/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Maven Repository</a>
+                              <p class="description">Maven仓库搜索引擎</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/nexus.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://help.sonatype.com/repomanager2/download/download-archives---repository-manager-oss" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Nexus </a>
+                              <p class="description">一个强大的Maven仓库管理器</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/must/gradle.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://gradle.org/install/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Gradle</a>
+                              <p class="description">一款项目自动化构建开源工具</p>
+                            </div>
+                          </div>
+                        </li>
+
+
+
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--开发必备结束-->
+
+                <div class="clearfix"></div>
+
+
+                <!--基础框架开始-->
+                <div class="indexbox fNAV 0" id="basic" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">基础框架</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/spring.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://spring.io/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">Spring</a>
+                              <p class="description">轻量级容器框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/spring-mvc.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">SpringMvc</a>
+                              <p class="description">基于Servlet API构建的Web框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/spring-boot.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://spring.io/projects/spring-boot/#learn" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Spring Boot</a>
+                              <p class="description">更便捷的Java开发框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/mybatis.png">
+                            </div>
+                            <div class="contents">
+                              <a href="http://www.mybatis.org/mybatis-3/zh/index.html" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">MyBatis</a>
+                              <p class="description">一款优秀的持久层框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/mybatis-plus.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://baomidou.com/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">MyBatis-Plus</a>
+                              <p class="description">简化MyBatis开发的利器</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/struts.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://struts.apache.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Struts2</a>
+                              <p class="description">基于MVC设计模式实现的Web应用程序框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/hibernate.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://hibernate.org/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">Hibernate</a>
+                              <p class="description">一款轻量级的 ORM 框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/spring-data.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://spring.io/projects/spring-data" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Spring Data</a>
+                              <p class="description">为数据访问提供一致的、基于 Spring 的编程模型</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/shiro.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://shiro.apache.org/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">Shiro</a>
+                              <p class="description">一个功能强大且易于使用的 Java 安全框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/security.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://docs.spring.io/spring-security/reference/index.html" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Spring Security</a>
+                              <p class="description">一个功能强大且高度可定制的访问控制框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/quartz.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.quartz-scheduler.net/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Quartz</a>
+                              <p class="description">一款由Java编写的开源任务调度的框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/velocity.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://velocity.apache.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Velocity</a>
+                              <p class="description">一个基于java的模板引擎</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/thymeleaf.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.thymeleaf.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Thymeleaf</a>
+                              <p class="description">一个现代的服务器端 Java 模板引擎-SpringBoot默认使用</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/free.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://freemarker.apache.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">FreeMarker</a>
+                              <p class="description">常用的Java模板引擎之一</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/mysql-con.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://dev.mysql.com/downloads/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">mysql-connector</a>
+                              <p class="description">用于Java/其他语言连接MySQL数据库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/oracle-con.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.oracle.com/cn/database/technologies/appdev/jdbc-downloads.html" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">OracleDriver</a>
+                              <p class="description">用于Java语言连接Oracle数据库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/basic/ehcache.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.ehcache.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">EhCache</a>
+                              <p class="description">一个纯Java的缓存框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="static/img/java/basic/nacos.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://nacos.io/zh-cn/" class="website" target="_blank"
+                                 rel="nofollow" style="color:#444">Nacos</a>
+                              <p class="description">一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="website-list">
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="static/img/java/basic/eureka.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/xmartlabs/eureka" class="website" target="_blank"
+                                 rel="nofollow" style="color:#444">Eureka</a>
+                              <p class="description">Eureka是Netflix开发的服务发现框架，本身是一个基于REST的服务，主要用于定位运行在AWS域中的中间层服务，以达到负载均衡和中间层服务故障转移的目的。</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="static/img/java/basic/druid.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://nacos.io/zh-cn/" class="website" target="_blank"
+                                 rel="nofollow" style="color:#444">Druid</a>
+                              <p class="description">Druid 提供了一个高效、功能强大、可扩展性好的数据库连接池。</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--基础框架结束-->
+
+
+                <div class="clearfix"></div>
+
+
+                <!--高级框架开始-->
+                <div class="indexbox fNAV 0" id="up" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">高级框架</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/cloud.png">
+                            </div>
+                            <div class="contents">
+                              <a href="http://www.ityouknow.com/spring-cloud.html" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Spring Cloud</a>
+                              <p class="description">Spring官方提供的微服务框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/cloud-ali.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/alibaba/spring-cloud-alibaba" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">Spring Cloud Alibaba</a>
+                              <p class="description">通过阿里中间件来迅速搭建分布式应用系统</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/apollo.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.apolloconfig.com/#/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Apollo</a>
+                              <p class="description">一款可靠的分布式配置管理中心，诞生于携程框架研发部</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/netty.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://netty.io/downloads.html" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Netty </a>
+                              <p class="description">一个基于 NIO 的网络编程框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/mina.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://mina.apache.org/mina-project/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Mina</a>
+                              <p class="description">基于TCP/IP、UDP/IP协议栈的通信框架</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/tcc.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/changmingxie/tcc-transaction" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">tcc-transaction</a>
+                              <p class="description">微服务架构下的TCC型分布式事务实现框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/easy-tr.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/QNJR-GROUP/EasyTransaction" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">EasyTransaction</a>
+                              <p class="description">一款分布式事务框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/seta.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://seata.io/en-us/index.html" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Seata</a>
+                              <p class="description">一个开源的分布式事务解决方案</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/sa-token.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://sa-token.dev33.cn/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">Sa-Token</a>
+                              <p class="description">一款轻量级的Java权限认证框架 </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/xxl.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.xuxueli.com/xxl-job/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">xxl-job</a>
+                              <p class="description">一款分布式任务调度框架</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/xxl.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.xuxueli.com/xxl-sso/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">xxl-sso</a>
+                              <p class="description">一款分布式单点登录框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/java/up/activiti.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.activiti.org/before-you-start" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Activiti</a>
+                              <p class="description">一款工作流引擎</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="website-list">
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/up/log4j.png"></div>
+                            <div class="contents">
+                              <a href="https://logging.apache.org/log4j/2.x/mail-lists.html" class="website" target="_blank"
+                                 rel="nofollow" style="color:#444">
+                                Log4j
+                              </a>
+                              <p class="description">Log4j是Apache的一个开放源代码项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件、甚至是套接口服务器等</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/up/Junit.png"></div>
+                            <div class="contents">
+                              <a href="https://logging.apache.org/log4j/2.x/mail-lists.html" class="website" target="_blank"
+                                 rel="nofollow" style="color:#444">
+                                Junit
+                              </a>
+                              <p class="description">JUnit是一个开源的单元测试框架,由IBM的开发人员开发。</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/up/tx-lcn.png"></div>
+                            <div class="contents">
+                              <a href="https://www.codingapi.com/docs/txlcn-preface/" class="website" target="_blank"
+                                 rel="nofollow" style="color:#444">
+                                TX-LCN
+                              </a>
+                              <p class="description">JTX-LCN定位于一款事务协调性框架，框架其本身并不操作事务，而是基于对事务的协调从而达到事务一致性的效果。</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/up/raincat.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/Dromara/Raincat" class="website" target="_blank"
+                                 rel="nofollow" style="color:#444">
+                                 Raincat
+                              </a>
+                              <p class="description"> 强一致性分布式事务，是基于二阶段提交+本地事务补偿机制来实现</p>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+
+                    </section>
+                  </div>
+                </div>
+                <!--高级框架结束-->
+
+                <!--开发利器开始-->
+                <div class="indexbox fNAV 0" id="package" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">开发利器</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/poi-tl.png"></div>
+                            <div class="contents">
+                              <a href="http://deepoove.com/poi-tl/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Poi-tl
+                              </a>
+                              <p class="description">所见即所得的Word导出工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/poi.png"></div>
+                            <div class="contents">
+                              <a href="https://poi.apache.org/download.html" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                Poi
+                              </a>
+                              <p class="description">在java中处理office的工具</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/jsonpath.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/json-path/JsonPath" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                JsonPath
+                              </a>
+                              <p class="description">强大的Json解析工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/fastjson.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/alibaba/fastjson" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                fastjson
+                              </a>
+                              <p class="description">阿里开发的Json解析工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/gson.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/google/gson" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                Gson
+                              </a>
+                              <p class="description">谷歌开发的Json解析工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/dom4j.png"></div>
+                            <div class="contents">
+                              <a href="https://dom4j.github.io/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                dom4j
+                              </a>
+                              <p class="description">高效的xml解析工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/swagger.png"></div>
+                            <div class="contents">
+                              <a href="https://swagger.io/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                Swagger
+                              </a>
+                              <p class="description">好用的接口文档生成工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/easyyapi.png"></div>
+                            <div class="contents">
+                              <a href="http://easyyapi.com/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                EasyYapi
+                              </a>
+                              <p class="description">一款Idea文档生成工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/smart-doc.png"></div>
+                            <div class="contents">
+                              <a href="https://gitee.com/smart-doc-team"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                smart-doc
+                              </a>
+                              <p class="description">开源API文档生成工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/zxing.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/zxing/zxing"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                zxing
+                              </a>
+                              <p class="description">Java生成/识别，条码/二维码的工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/lucene.png"></div>
+                            <div class="contents">
+                              <a href="https://lucene.apache.org/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                Lucene
+                              </a>
+                              <p class="description">一个开源的全文检索引擎工具包</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/package/jetty.png"></div>
+                            <div class="contents">
+                              <a href="https://www.eclipse.org/jetty/powered/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                jetty
+                              </a>
+                              <p class="description">一个基于Java的开源的servlet容器</p>
+                            </div>
+                          </div>
+                        </li>
+
+
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--开发利器结束-->
+
+
+
+                <!--中间件开始-->
+                <div class="indexbox fNAV 0" id="middle" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">中间件</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/kafka.png"></div>
+                            <div class="contents">
+                              <a href="https://kafka.apache.org/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                Kafka
+                              </a>
+                              <p class="description">一个高吞吐量的分布式发布订阅消息系统</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/rocket.png"></div>
+                            <div class="contents">
+                              <a href="https://rocketmq.apache.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                RocketMQ
+                              </a>
+                              <p class="description">一款阿里开源的消息中间件</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/rabbit.png"></div>
+                            <div class="contents">
+                              <a href="https://www.rabbitmq.com/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                RabbitMQ
+                              </a>
+                              <p class="description"> 一套开源（MPL）的消息中间件</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/active.png"></div>
+                            <div class="contents">
+                              <a href="https://activemq.apache.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                ActiveMQ
+                              </a>
+                              <p class="description"> 老牌的消息中间件</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/es.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/elastic/elasticsearch" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                Elasticsearch
+                              </a>
+                              <p class="description">一款分布式搜索引擎</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/solr.png"></div>
+                            <div class="contents">
+                              <a href="https://solr.apache.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Solr
+                              </a>
+                              <p class="description">一个基于Lucene的全文搜索引擎</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/mycat.png"></div>
+                            <div class="contents">
+                              <a href="http://www.mycat.org.cn/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                Mycat
+                              </a>
+                              <p class="description">一个强大的数据库中间件</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/fastdfs.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/happyfish100/fastdfs" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                FastDFS
+                              </a>
+                              <p class="description">一个开源的高性能分布式文件系统</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/memcached.png"></div>
+                            <div class="contents">
+                              <a href="http://memcached.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Memcached
+                              </a>
+                              <p class="description">一款分布式内存缓存系统</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/zk.png"></div>
+                            <div class="contents">
+                              <a href="https://zookeeper.apache.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Zookeeper
+                              </a>
+                              <p class="description">一个开源的分布式应用程序协调服务</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/tomcat.png"></div>
+                            <div class="contents">
+                              <a href="https://tomcat.apache.org/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                Tomcat
+                              </a>
+                              <p class="description">一个开源、免费的Web应用服务器</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/middle/sharding.png"></div>
+                            <div class="contents">
+                              <a href="https://shardingsphere.apache.org/"
+                                 class="website" target="_blank" rel="nofollow" style="color:#444">
+                                ShardingSphere
+                              </a>
+                              <p class="description">将任何数据库转换为分布式数据库系统的生态系统，并通过分片、弹性扩展、加密功能等对其进行增强。</p>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--中间件结束-->
+
+                <!--数据库开始-->
+                <div class="indexbox fNAV 0" id="database" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">数据库</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/mysql.png"></div>
+                            <div class="contents">
+                              <a href="https://www.mysql.com/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                MySQL
+                              </a>
+                              <p class="description">最流行的关系型数据库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/oracle.png"></div>
+                            <div class="contents">
+                              <a href="https://www.oracle.com/cn/database/technologies/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                Oracle
+                              </a>
+                              <p class="description">甲骨文公司的一款关系型数据库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/sqlite.png"></div>
+                            <div class="contents">
+                              <a href="https://www.sqlite.org/download.html" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                SQLite
+                              </a>
+                              <p class="description">一款轻型的数据库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/h2.png"></div>
+                            <div class="contents">
+                              <a href="http://www.h2database.com/html/main.html"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                H2数据库
+                              </a>
+                              <p class="description">一个用Java开发的嵌入式数据库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/dm.png"></div>
+                            <div class="contents">
+                              <a href="https://www.dameng.com/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                达梦数据库
+                              </a>
+                              <p class="description">一款国产数据库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/redis.png"></div>
+                            <div class="contents">
+                              <a href="https://redis.io/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                Redis
+                              </a>
+                              <p class="description">一个高性能的 key-value 数据库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/jedis.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/redis/jedis"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                Jedis
+                              </a>
+                              <p class="description">Redis的 Java 客户端，用于在Java中操作Redis</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/redisson.png"></div>
+                            <div class="contents">
+                              <a href="https://redisson.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Redisson
+                              </a>
+                              <p class="description">一个高级的分布式协调Redis客服端</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/mongodb.png"></div>
+                            <div class="contents">
+                              <a href="https://www.mongodb.com/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">
+                                MongoDB
+                              </a>
+                              <p class="description">一个基于分布式文件存储的数据库</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/postgresql.png"></div>
+                            <div class="contents">
+                              <a href="https://www.postgresql.org/"
+                                 class="website" target="_blank" rel="nofollow" style="color:#444">
+                                PostgreSQL
+                              </a>
+                              <p class="description">PostgreSQL是一个功能强大的开放源码对象关系数据库系统，经过35年的积极开发，它在可靠性、功能健壮性和性能方面享有盛誉。</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/postgresql.png"></div>
+                            <div class="contents">
+                              <a href="https://www.postgresql.org/"
+                                 class="website" target="_blank" rel="nofollow" style="color:#444">
+                                PostgreSQL
+                              </a>
+                              <p class="description">PostgreSQL是一个功能强大的开放源码对象关系数据库系统，经过35年的积极开发，它在可靠性、功能健壮性和性能方面享有盛誉。</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/database/hbase.png"></div>
+                            <div class="contents">
+                              <a href="https://hbase.apache.org/"
+                                 class="website" target="_blank" rel="nofollow" style="color:#444">
+                                HBase
+                              </a>
+                              <p class="description">Apache HBase™ 是Hadoop数据库，一个分布式、可扩展的大数据存储。。</p>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--数据库结束-->
+
+                <!--性能优化开始-->
+                <div class="indexbox fNAV 0" id="better" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">性能优化</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/better/mat.png"></div>
+                            <div class="contents">
+                              <a href="https://www.eclipse.org/mat/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                MAT
+                              </a>
+                              <p class="description">一款快速，功能丰富的Jvm分析工具</p>
+                            </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/better/VisualVM.png"></div>
+                            <div class="contents">
+                              <a href="http://visualvm.github.io/features.html" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                VisualVM
+                              </a>
+                              <p class="description">一款免费，功能强大的Jvm分析工具</p>
+                            </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/better/arthas.png"></div>
+                            <div class="contents">
+                              <a href=" https://arthas.aliyun.com/doc/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                arthas
+                              </a>
+                              <p class="description">一款Java性能诊断工具</p>
+                            </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/better/JProfiler.png"></div>
+                            <div class="contents">
+                              <a href=" https://www.ej-technologies.com/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                jprofiler
+                              </a>
+                              <p class="description">一款 Java应用性能诊断工具</p>
+                            </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/better/JMeter.png"></div>
+                            <div class="contents">
+                              <a href=" https://jmeter.apache.org/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                JMeter
+                              </a>
+                              <p class="description">一款压力测试和性能测量工具</p>
+                            </div>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--性能优化结束-->
+
+                <!--优秀开源开始-->
+                <div class="indexbox fNAV 0" id="open" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">优秀开源</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/open/ry.png"></div>
+                            <div class="contents">
+                              <a href="http://www.ruoyi.vip/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                若依
+                              </a>
+                              <p class="description">一套全部开源的快速开发平台,毫无保留给个人及企业免费使用。</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/open/JeeSite.png"></div>
+                            <div class="contents">
+                              <a href="https://gitee.com/thinkgem/jeesite" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                JeeSite
+                              </a>
+                              <p class="description">企业信息化开发基础平台，Java EE（J2EE）快速开发框架</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/open/jfinal.jpg"></div>
+                            <div class="contents">
+                              <a href="https://jfinal.com/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                JFinal
+                              </a>
+                              <p class="description">基于Java语言的极速 web 开发框架</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/open/jeewx.jpg"></div>
+                            <div class="contents">
+                              <a href="http://www.jeewx.com/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                jeewx
+                              </a>
+                              <p class="description">JAVA版免费微信管家系统</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/open/ms.png"></div>
+                            <div class="contents">
+                              <a href="https://gitee.com/mingSoft/MCMS" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                铭飞
+                              </a>
+                              <p class="description">优质的开源生态内容体系</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/java/open/hutool.jpg"></div>
+                            <div class="contents">
+                              <a href="https://hutool.cn" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">
+                                Hutool
+                              </a>
+                              <p class="description">小而全的Java工具类库</p>
+                            </div>
+                          </div>
+                        </li>
+
+
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--优秀开源结束-->
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </main>
+
+
+  <footer class="text-muted small bg-dark py-4 mt-3 d-none d-lg-block" id="footer"
+    style="background:#222c3c !important">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <div class="">
+            <div class="footer-new">
+              <div class="about" style="width: 20%;">
+                <img src="./static/img/logo.png" alt="程序员一站式导航" style="width: 100%; height: auto;" />
+              </div>
+              <div class="about" style="width: 444px;">
+                <h2>关于</h2>
+                <div class="text">
+                  CXY521 专注程序员一站式导航，提供最精华有趣的内容&nbsp;。 本站仅为网址导航，网站来源于网络，对其内容不负任何责任，若有问题，请联系我们。
+                </div>
+              </div>
+              <div class="about" style="width: 100px;">
+                <h2>友情链接</h2>
+                <div class="text">
+                  <p><a href="https://www.24kdh.com/" target="_blank" style="color:#eee">24K导航</a></p>
+                  <p><a href="http://www.buhuixiao.com/" target="_blank" style="color:#eee">不会笑青年</a></p>
+                  <p><a href="http://www.ityouknow.com/" target="_blank" style="color:#eee">纯洁的微笑</a></p>
+                  <!-- <p><a href="/about" target="_blank">关于我们</a></p>
+                              <p><a href="contact" target="_blank">联系我们</a></p> -->
+                </div>
+              </div>
+              <div class="about">
+                <h2>公众号
+                  <!-- &amp;小程序 -->
+                </h2>
+                <div class="">
+                  <div class="text">
+                    <div class="" id="t1" style="">
+                      <p><img src="./static/img/wechat/erweima.jpg" class="appdown" style="width:108px;height:108px">
+                      </p>
+                      <p style="padding-bottom: 0;">回复521进群摸鱼</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="qrmain">
+                              <div class="qrbox">
+                                  <div class="qrcodepos" id="t1" style="">
+                                      <div><img src="./static/img/wechat/laughyouth.jpg" class="appdown" style="width:108px;height:108px">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> -->
+              </div>
+              <!-- <div class="about" style="text-align: center; width: 200px;">
+                          <h2>程序员摸鱼群</h2>
+                          <div class="text">
+                              <p style="">
+                                <img src="./static/img/wechat/laughyouth.jpg"" class="appdown" style="width:108px;height:108px;margin-top: 13px">
+                              </p>
+                          </div>
+                          <p style="">回复521开启摸鱼</p>
+                      </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div style="background: #2b374c;color:#818394;padding:12px;font-size:12px;" class="d-none  d-lg-block" id="footer">
+    <div class="container">
+      <!-- <div class="footer_btnbox">
+          <div class="botton-footer active" data="-1">Copyright</div>
+          <div class="botton-footer" data="0">友情链接</div>
+      </div> -->
+      <div align="left" id="yqlinks-cate-00" class=" links-box" style="">
+        Copyright © 2021-2022 &nbsp; &nbsp;
+        <a href="http://www.cxy521.com">
+          <span style="color: #868e96;">程序员一站式导航</span>
+        </a>&nbsp; &nbsp;
+        <a href="http://beian.miit.gov.cn">
+          <span style="color: #868e96;">京ICP备15067287号-4</span>
+        </a>&nbsp; &nbsp; 声明：网站上的服务均为第三方提供，与CXY521无关。请用户注意甄别服务质量，避免上当受骗。
+      </div>
+      <!-- <div class="time_content  links-box" style="display: none;" id="yqlinks-cate-0">
+          <div style="line-height: 20px;">
+              友情链接：&nbsp;
+               <a href="https://www.24kdh.com/" target="_blank" style="color:#eee">24K导航</a>&nbsp; &nbsp;
+               <a href="http://laughyouth.com/" target="_blank" style="color:#eee">不会笑青年</a>&nbsp; &nbsp;
+               <a href="http://www.ityouknow.com/" target="_blank" style="color:#eee">纯洁的微笑</a>&nbsp; &nbsp;
+          </div>
+      </div> -->
+    </div>
+  </div>
+
+
+  <div class="wx-public-container">
+    <div class="wx-public-dialog" style="z-index: 2009;">
+      <div class="el-dialog" style="display: none;">
+        <div class="el-dialog__header">
+          <span class="el-dialog__title"></span>
+        </div>
+        <div class="el-dialog__body">
+          <div class="top">
+            <p>扫码关注公众号</p>
+          </div>
+          <div class="qrcode">
+            <!-- <img src="./static/img/wechat/laughyouth.jpg" alt="不会笑青年公众号"> -->
+            <img src="./static/img/wechat/erweima.jpg" alt="程序员指南公众号">
+          </div>
+          <div class="wx-name">
+            <span class="icon"></span>
+            <span>关注后回复：521，进群交流</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="./static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./static/js/tipso.min.js"></script>
+  <script type="text/javascript" src="./static/js/index.js"></script>
+  <script type="text/javascript" src="./static/js/girls/bootstrap.min.js"></script>
+
+
+  <div style="display: none;">
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?195b6796d001b750b1bf8e507b220b98";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </div>
+</body>
+
+</html>

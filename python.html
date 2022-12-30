@@ -1,0 +1,2453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://www.cxy521.com">
+  <meta name="keywords"
+    content="Cxy521,技术公众号，程序员我爱你,程序员导航,程序员一站式导航网站,在线工具,程序员,工具,开发人员工具,小工具,站长工具,代码格式化、压缩、加密、解密,下载链接转换,字帖,田字格,进制转换,二维码" />
+
+  <meta name="description" content="CXY521(程序员我爱你)是一个致力于一站式程序员学习工作娱乐导航网站，以让程序员更便捷为使命，始终围绕程序员需求，为程序员提供最新工具导航" />
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title>程序员导航-Python工具</title>
+  <link rel="shortcut icon" href="./static/img/favicon.ico">
+  <link rel="icon" sizes="32x32" href="./static/img/favicon.ico">
+  <link rel="Bookmark" href="./static/img/favicon.ico">
+
+  <link rel="stylesheet" href="./static/css/bootstrap.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=1.01">
+  <link rel="stylesheet" href="./static/css/common.css?v=1.01">
+
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="header">
+    <div class="container">
+
+      <a id="logo-1" class="navbar-brand text-truncate" href="/" title="拖动 LOGO 到书签栏, 立即收藏 CXY521">
+        <img src="./static/img/logo521.png" class="logo-2" alt="程序员一站式导航" title="拖动 LOGO 到书签栏, 立即收藏 CXY521">
+      </a>
+      <div class="d-none d-lg-block">
+        <span id="hover-logo" class="g-popover g-popover--light" style="display: none;">
+          <div class="gdd-favorite-guide gdd-favorite-guide__dark" style="top: 16px; width: 318px;">
+            <div class="gdd-favorite-guide__arrow">
+              <div class="gdd-favorite-guide__arrow--stem"></div>
+              <div class="gdd-favorite-guide__arrow--head"></div>
+            </div>
+            <div class="gdd-favorite-guide__content">
+              拖动 Logo 到书签栏, 立即收藏 CXY521
+            </div>
+          </div>
+        </span>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
+        aria-controls="navbar_collapse" aria-expanded="false" aria-label="展开菜单">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav mr-auto">
+          <li class="dropdown">
+            <a href="index.html" href="wechat.html" class="nav-link demo1">首页<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a href="article.html" class="nav-link demo1">推荐<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a href="manual.html" href="wechat.html" class="nav-link demo1">手册<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a id="pub-book" href="book.html" class="nav-link demo1">书籍<span class="caret"></span></a>
+          </li>
+          <!-- <li class="dropdown">
+            <a id="pub-wechat-" href="wechat.html" class="nav-link demo1">公号<span class="caret"></span></a>
+          </li> -->
+          <li class="dropdown">
+            <a id="pub-dating" href="java.html" class="nav-link demo1">Java<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a id="pub-dating" href="python.html" class="nav-link demo1">Python<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a id="pub-dating" href="object.html" class="nav-link demo1">脱单<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+            <a id="pub-wechat-chat" href="#" class="nav-link demo1">交流群<span class="caret"></span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="dropdown">
+              <a id="pub-wechat-chat" href="https://mp.weixin.qq.com/s/bscD8BoVk4ZUv9TJL1iK2A" target="_blank"  class="nav-link demo1">星球<span class="caret"></span></a>
+          </li>
+          <li class="dropdown">
+               <a id="pub-wechat-chat" href="https://mp.weixin.qq.com/s/dl_PChAbbWmBMYnkEeWMnQ" target="_blank"  class="nav-link demo1">闲鱼<span class="caret"></span></a>
+           </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://www.24kdh.com" target="_blank">24k导航</a>
+          </li>
+      </ul>
+
+      </div>
+    </div>
+  </header>
+
+  <main id="body" style="margin-top: 55px;">
+    <div class="container">
+      <div class="container1">
+
+
+        <div class="row1">
+
+          <div class="leftcl">
+            <div class="col-md-1s sidebars">
+              <div class="content-sidebar">
+                <dl id="goto">
+                  <dt>
+                    <span class="show-list"></span>
+                  </dt>
+                  <dd class="">
+                    <a href="#must" class="auto-scroll" data-offset="-20" data-speed="500">开发必备</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#web" class="auto-scroll" data-offset="-20" data-speed="500">web开发</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#spider" class="auto-scroll" data-offset="-20" data-speed="500">爬虫工具</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#data" class="auto-scroll" data-offset="-20" data-speed="500">数据分析</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#library" class="auto-scroll" data-offset="-20" data-speed="500">开发利器</a>
+                  </dd>
+                  <dd class="">
+                    <a href="#intelligence" class="auto-scroll" data-offset="-20" data-speed="500">人工智能</a>
+                  </dd>
+
+
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="main-container">
+              <div class="main-content" style="position:relative">
+
+                <!--开发必备-->
+                <div class="indexbox fNAV 0" id="must" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">开发必备</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/python.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.python.org/downloads/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Python</a>
+                              <p class="description">基础运行环境</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/must/pycharm.png"></div>
+                            <div class="contents">
+                              <a href="https://www.jetbrains.com/pycharm/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Pycharm
+                              </a>
+                              <p class="description">最智能的python编辑器</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/pydev.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.pydev.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">PyDev</a>
+                              <p class="description">Eclipse开发Python的IDE</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/wing.ico">
+                            </div>
+                            <div class="contents">
+                              <a href="https://wingware.com/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Wing Pro</a>
+                              <p class="description">Python的智能开发环境</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/eric.png">
+                            </div>
+                            <div class="contents">
+                              <a href="http://eric-ide.python-projects.org/eric-download.html" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">Eric</a>
+                              <p class="description">一个用Python编写的功能齐全的Python集成开发环境</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/pyscripter.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/pyscripter/pyscripter" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">PyScripter</a>
+                              <p class="description">一款免费开源的 Python 集成开发环境</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/Thonny_logo.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://thonny.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Thonny</a>
+                              <p class="description">一款轻量级的 Python IDE</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/Spyder_logo.svg.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.spyder-ide.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Spyder</a>
+                              <p class="description">强大的交互式 Python 语言开发环境</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/pypi.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://pypi.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">PyPi</a>
+                              <p class="description">python开发包在线查找工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/pyinstall.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://sourceforge.net/projects/pyinstallerextractor/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">PyInstaller Extractor</a>
+                              <p class="description">反编译exe文件的工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/easy_dec.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://sourceforge.net/projects/easypythondecompiler/?source=directory"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">Easy Python Decompiler
+                              </a>
+                              <p class="description">好用的反编译工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/anaconda.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://repo.anaconda.com/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Anaconda </a>
+                              <p class="description">Python多环境管理工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/pyenv.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/pyenv/pyenv" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">pyenv</a>
+                              <p class="description">Python多环境管理利器</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/pip.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/pip/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">pip</a>
+                              <p class="description">python包管理工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/jupyternotebook.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://jupyter.org/try" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">jupyter notebook</a>
+                              <p class="description">python Web编辑器</p>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/intelligence/FairScale.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/colorama/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Colorama</a>
+                              <p class="description">Colorama允许你在终端使用颜色</p>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--开发必备结束-->
+
+                <div class="clearfix"></div>
+
+                <!--web开发开始-->
+                <div class="indexbox fNAV 0" id="web" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">web开发</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/django.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.djangoproject.com/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Django</a>
+                              <p class="description">一个高效的Python Web开发框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/flask.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://flask.palletsprojects.com/en/2.0.x/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Flask</a>
+                              <p class="description">一款轻量级Web开发框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/pyramid.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://trypyramid.com/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Pyramid</a>
+                              <p class="description">一个扩展性很强且灵活的Web开发框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/webpy.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://webpy.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">web.py</a>
+                              <p class="description">一个用Python语言开发的Web框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/tornado.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.tornadoweb.org/en/stable/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Tornado</a>
+                              <p class="description">一个Python Web框架和异步网络库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/turbo.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.turbogears.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">TurboGears</a>
+                              <p class="description">一站式的Python开发框架集合</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/cherrypy.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://cherrypy.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">CherryPy</a>
+                              <p class="description">一种用于Python的、简单而非常有用的Web框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/falcon.png">
+                            </div>
+                            <div class="contents">
+                              <a href="http://falconframework.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Falcon</a>
+                              <p class="description">一个用于构建大规模的应用程序后端和微服务的web框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/asgineer.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://asgineer.readthedocs.io/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Asgineer </a>
+                              <p class="description">一种编写异步Web 应用程序的工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/bottle.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://bottlepy.org/docs/dev/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Bottle</a>
+                              <p class="description">一个快速、简单和轻量级的 WSGI 微型网络框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/emmett.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://emmett.sh/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Emmett</a>
+                              <p class="description">一个全栈Python Web框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/apidaora.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/dutradda/apidaora" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">apidaora</a>
+                              <p class="description">最快的python api框架之一</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/quixote.png">
+                            </div>
+                            <div class="contents">
+                              <a href="http://www.quixote.ca/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Quixote</a>
+                              <p class="description">一个使用Python编写基于Web的应用程序的框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/reahl.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.reahl.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">reahl</a>
+                              <p class="description">一个Web应用程序框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/back_sheep.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/Neoteroi/BlackSheep" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">BlackSheep</a>
+                              <p class="description">一个异步Web框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/indexpy.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://index-py.aber.sh/stable/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Index.py</a>
+                              <p class="description">用于快速的构建需要的web服务</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/sanic.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/sanic-org/sanic" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Sanic</a>
+                              <p class="description">一个高性能的web框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/starlette.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/starlette/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Starlette </a>
+                              <p class="description">一个轻量级的ASGI框架/工具包</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/fastapi.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://fastapi.tiangolo.com/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Fastapi </a>
+                              <p class="description">一个现代、快速（高性能）的 Web 框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/responseder.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/taoufik07/responder" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Responder</a>
+                              <p class="description">一个基于Python的HTTP服务框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/hug.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/hug/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Hug</a>
+                              <p class="description">一个Python3 API开发框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/molten.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://moltenframework.com/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Molten</a>
+                              <p class="description">一个最小的、可扩展的、快速的开发框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/clastic.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/mahmoud/clastic" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Clastic</a>
+                              <p class="description">一个功能强大的Python Web框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/aiohttp.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://docs.aiohttp.org/en/stable/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Aiohttp</a>
+                              <p class="description">用于asyncio和Python的异步HTTP客户端/服务器</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/Masonite.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://docs.masoniteproject.com/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Masonite</a>
+                              <p class="description">一个致力于为开发者提供齐全功能的Python Web 框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/quart.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://pgjones.gitlab.io/quart/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Quart</a>
+                              <p class="description">一个Python网络微框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/tonberry.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/Ayehavgunne/Tonberry" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Tonberry</a>
+                              <p class="description">一个符合ASGI的Web微框架，采用基于类的路由方法</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/cyclone.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://cyclone.io/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Cyclone</a>
+                              <p class="description">将Tornado API实现为Twisted协议的Web服务器框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/klein.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/twisted/klein" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Klein</a>
+                              <p class="description">一个Web微框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/nameko.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.nameko.io/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">nameko</a>
+                              <p class="description">用于构建微服务的Python框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/cubic_web.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://www.cubicweb.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">CubicWeb</a>
+                              <p class="description">一种语义Web应用程序框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/zope.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://zope.readthedocs.io/en/latest/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Zope2</a>
+                              <p class="description">所有Python Web应用程序、工具的鼻祖</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/web2py.png">
+                            </div>
+                            <div class="contents">
+                              <a href="http://web2py.com/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Web2py</a>
+                              <p class="description">免费开源的全栈框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/web/pylons.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://docs.pylonsproject.org/projects/pylons-webframework/en/latest/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">Pylons</a>
+                              <p class="description">一个开放源代码的Web应用框架</p>
+                            </div>
+                         </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                             <img src="./static/img/python/game/pilas.ico">
+                            </div>
+                            <div class="contents">
+                              <a href="https://docs.pylonsproject.org/projects/pylons-webframework/en/latest/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">JmesPath</a>
+                              <p class="description">JMESPath使Python处理JSON更加容易</p>
+                            </div>
+                                </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                          <img src="./static/img/python/must/pyenv.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://docs.pylonsproject.org/projects/pylons-webframework/en/latest/"
+                                class="website" target="_blank" rel="nofollow" style="color:#444">Simplejson</a>
+                              <p class="description">Simplejson比json快很多，因为它用C实现一些关键部分。</p>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--web开发结束-->
+
+                <div class="clearfix"></div>
+
+                <!--爬虫工具开始-->
+                <div class="indexbox fNAV 0" id="spider" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">爬虫工具</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/scrapy.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://scrapy.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Scrapy</a>
+                              <p class="description">可以高效的爬取web页面并提取出结构化数据</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/crawley.png">
+                            </div>
+                            <div class="contents">
+                              <a href="http://ww12.crawley-cloud.com/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Crawley</a>
+                              <p class="description">Python开发的爬虫框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/portia.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/scrapinghub/portia" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Portia</a>
+                              <p class="description">可视化地爬取网页的爬虫框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/newspaper.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/codelucas/newspaper" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">newspaper </a>
+                              <p class="description">一个用来提取新闻、文章以及内容分析的Python爬虫框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/python-goose.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/grangier/python-goose" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Python-goose</a>
+                              <p class="description">爬取任何新闻文章或文章类型的网页</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/asks.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/theelous3/asks" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">asks</a>
+                              <p class="description">封装了curio和trio的一个http请求库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/vibora.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/vibora-io/vibora" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">vibora </a>
+                              <p class="description">号称最快的异步请求框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/pyppeteer.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/miyakogi/pyppeteer" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Pyppeteer </a>
+                              <p class="description">用来模拟浏览器请求的工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/requestium.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/tryolabs/requestium" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">Requestium</a>
+                              <p class="description">Requests和Selenium封装的产物 </p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/arsenic.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/HENNGE/arsenic" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">arsenic </a>
+                              <p class="description">基于asyncio构建的异步webdriver客户端</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/grab.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/lorien/grab" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Grab </a>
+                              <p class="description">爬虫界的渐进式框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/botflow.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/kkyon/botflow" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">botflow </a>
+                              <p class="description">可以用来爬虫、机器学习、量化交易</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/ruia.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/howie6879/ruia" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">ruia </a>
+                              <p class="description">基于asyncio的异步Python 3.6+网页抓取微框架</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/pyspider.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/binux/pyspider" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">PySpider </a>
+                              <p class="description">一个简单易用且强大的Python爬虫框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/beautiful_soup.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://beautifulsoup.readthedocs.io/zh_CN/latest/" class="website"
+                                target="_blank" rel="nofollow" style="color:#444">Beautiful Soup </a>
+                              <p class="description">从HTML或XML文件中提取数据的Python库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/cola.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://github.com/qinxuye/cola" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">Cola </a>
+                              <p class="description">一个分布式的爬虫框架</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/spider/feapder.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://feapder.com/#/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">feapder </a>
+                              <p class="description">一款上手简单,功能强大的Python爬虫框架</p>
+                            </div>
+                          </div>
+                        </li>
+
+
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--爬虫工具结束-->
+
+                <!--数据分析开始-->
+                <div class="indexbox fNAV 0" id="data" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">数据分析</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/gensim.png"></div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/gensim/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Genism
+                              </a>
+                              <p class="description">一个简单高效的自然语言处理Python库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/tensoflow.png"></div>
+                            <div class="contents">
+                              <a href="https://tensorflow.google.cn/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                TensorFlow
+                              </a>
+                              <p class="description">一个用于数值计算和大规模机器学习的开源库</p>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/numpy.png"></div>
+                            <div class="contents">
+                              <a href="https://numpy.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                NumPy
+                              </a>
+                              <p class="description">Python进行科学计算的基础软件包</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/plotly.png"></div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/plotly/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Plotly
+                              </a>
+                              <p class="description">最强Python可视化库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/seaborn.png"></div>
+                            <div class="contents">
+                              <a href="https://seaborn.pydata.org/index.html#" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                seaborn
+                              </a>
+                              <p class="description">一个用于数据科学项目数据可视化的库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/scipy.png"></div>
+                            <div class="contents">
+                              <a href="https://scipy.org/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Scipy
+                              </a>
+                              <p class="description">一个用于数学、科学和工程计算的开源库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/stylecloud.png"></div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/stylecloud/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                stylecloud
+                              </a>
+                              <p class="description">一款可以制作个性化词云图的神器</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/matplotlib.png"></div>
+                            <div class="contents">
+                              <a href="https://matplotlib.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Matplotlib
+                              </a>
+                              <p class="description">绘制各类可视化图形的工具库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/pandas.png"></div>
+                            <div class="contents">
+                              <a href="https://pandas.pydata.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Pandas
+                              </a>
+                              <p class="description">python数据挖掘必备的工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/scikit.png"></div>
+                            <div class="contents">
+                              <a href="https://scikit-learn.org/stable/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Scikit-Learn
+                              </a>
+                              <p class="description">简单高效的数据挖掘和数据分析工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/keras.png"></div>
+                            <div class="contents">
+                              <a href="https://keras.io/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Keras
+                              </a>
+                              <p class="description">提供了一系列高层的神经网络相关类和函数</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/graphlab.png"></div>
+                            <div class="contents">
+                              <a href="https://reviews.financesonline.com/p/graphlab-create/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                GraphLab Greate
+                              </a>
+                              <p class="description">支持快速构建大型高性能数据产品</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/pupl.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/coin-or/pulp" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                PuLP
+                              </a>
+                              <p class="description">一个开源的线性规划包</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/data/statsmodels.png"></div>
+                            <div class="contents">
+                              <a href="https://www.statsmodels.org/stable/index.html" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                StatsModels
+                              </a>
+                              <p class="description">支持数据的统计建模分析</p>
+                            </div>
+                                            </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons">
+                      <img src="./static/img/python/gui/Kivy_logo.png">
+                                </div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/chardet/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Chardet
+                              </a>
+                              <p class="description">可以使用chardet模块来检测文件或数据流的字符集。</p>
+                            </div>
+                                                                    </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons">
+                    <img src="./static/img/python/image/PyG2Plot.png">
+                                </div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/progress/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                progress
+                              </a>
+                              <p class="description">借助这个软件包，您可以轻松创建进度条</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--数据分析结束-->
+
+                <!--开发利器开始-->
+                <div class="indexbox fNAV 0" id="library" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">开发利器</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/ipython.png"></div>
+                            <div class="contents">
+                              <a href="https://ipython.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                IPython
+                              </a>
+                              <p class="description">对Python自带交互环境的增强工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/requests.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/psf/requests" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Requests
+                              </a>
+                              <p class="description">一个简单而优雅的 HTTP 库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/DearPyGui.png"></div>
+                            <div class="contents">
+                              <a href="https://www.osgeo.cn/dearpygui/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Dear PyGui
+                              </a>
+                              <p class="description">一个简单易用（但功能强大的）Python GUI框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/pillow.png"></div>
+                            <div class="contents">
+                              <a href="https://python-pillow.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Pillow
+                              </a>
+                              <p class="description"> 一个图像处理库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/emoj.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/carpedm20/emoji.git" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Emoji4Python
+                              </a>
+                              <p class="description"> 一个有意思的表情库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/pygame.png"></div>
+                            <div class="contents">
+                              <a href="https://www.pygame.org/news" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Pygame
+                              </a>
+                              <p class="description">一个python游戏支持库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/pywebio.png"></div>
+                            <div class="contents">
+                              <a href="https://pywebio.readthedocs.io/zh_CN/latest/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                PyWebIO
+                              </a>
+                              <p class="description">以脚本方式编写交互式Web应用程序</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/fuckit.png"></div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/fuckit/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                FuckIt
+                              </a>
+                              <p class="description">一个让错误的代码也能运行的库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/cubes.png"></div>
+                            <div class="contents">
+                              <a href="https://pythonhosted.org/cubes/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Cubes
+                              </a>
+                              <p class="description">一个轻量级的Python框架和工具集</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/dpark.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/douban/dpark" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Dpark
+                              </a>
+                              <p class="description">豆瓣开发的一个Python分布式计算框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/library/buildbot.png"></div>
+                            <div class="contents">
+                              <a href="https://buildbot.python.org/all/#/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Buildbot
+                              </a>
+                              <p class="description">python实现的开源持续构建和持续交付工具</p>
+                            </div>
+                          </div>
+                        </li>
+                                               </li>
+                        <li class="hot-item ">
+                          <div class="item-card">
+                            <div class="icons">
+                              <img src="./static/img/python/must/pip.png">
+                            </div>
+                            <div class="contents">
+                              <a href="https://pypi.org/project/pip/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">pip</a>
+                              <p class="description">python包管理工具</p>
+                            </div>
+                          </div>
+                        </li>
+                      </li>
+                      <li class="hot-item">
+                        <div class="item-card">
+                          <div class="icons"><img src="./static/img/python/web/pylons.png"></div>
+                          <div class="contents">
+                            <a href="https://github.com/tiangolo/typer" class="website" target="_blank" rel="nofollow"
+                              style="color:#444">
+                              typer
+                            </a>
+                            <p class="description">纯python构建数据可视化app的理想选择</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="hot-item">
+                        <div class="item-card">
+                          <div class="icons"><img src="./static/img/python/web/pywebview.png"></div>
+                          <div class="contents">
+                            <a href="https://pywebview.flowrl.com/" class="website" target="_blank" rel="nofollow"
+                              style="color:#444">
+                              Pywebview
+                            </a>
+                            <p class="description">一个Python第三方库，用于以GUI形式显示HTML，CSS和JavaScript内容</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="hot-item">
+                        <div class="item-card">
+                          <div class="icons"><img src="./static/img/python/web/pylons.png"></div>
+                          <div class="contents">
+                            <a href="https://github.com/Textualize/rich" class="website" target="_blank" rel="nofollow"
+                              style="color:#444">
+                              rich
+                            </a>
+                            <p class="description">Rich API不仅能够在终端输出提供丰富的彩色文本和精美的格式</p>
+                          </div>
+                        </div>
+                      </li>
+                    </li>
+                    <li class="hot-item">
+                      <div class="item-card">
+                        <div class="icons"><img src="./static/img/python/web/pylons.png"></div>
+                        <div class="contents">
+                          <a href="https://github.com/onelivesleft/PrettyErrors" class="website" target="_blank" rel="nofollow"
+                            style="color:#444">
+                            PrettyErrors
+                          </a>
+                          <p class="description">PrettyErrors是一个精简Python错误信息的工具，特点是界面十分简洁友好。</p>
+                        </div>
+                      </div>
+                    </li>
+                  </li>
+                  <li class="hot-item">
+                    <div class="item-card">
+                      <div class="icons"><img src="./static/img/python/web/pylons.png"></div>
+                      <div class="contents">
+                        <a href="https://github.com/facebookresearch/hydra" class="website" target="_blank" rel="nofollow"
+                          style="color:#444">
+                          Hydra and OmegaConf
+                        </a>
+                        <p class="description">Hydra可以使配置工作变得简单。它能够从命令行或者配置文件中覆盖部分出来，无需维护相似的配置文件，用组合的方式进行配置，从而加快了实验运行速度。
+                        </p>
+                      </div>
+                    </div>
+
+
+                  </li>
+                      </li>
+                      <li class="hot-item">
+                        <div class="item-card">
+                          <div class="icons"><img src="./static/img/python/web/pylons.png"></div>
+                          <div class="contents">
+                            <a href="https://github.com/plotly/dash" class="website" target="_blank" rel="nofollow"
+                              style="color:#444">
+                              Dash
+                            </a>
+                            <p class="description">纯python构建数据可视化app的理想选择</p>
+                          </div>
+                        </div>
+                      </li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+
+                <!--开发利器结束-->
+
+                <!--人工智能开始-->
+                <div class="indexbox fNAV 0" id="intelligence" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">人工智能</strong>
+                  </div>
+                  <div id="catalog">
+                    <section data-catalog="download" class="active">
+                      <ul class="website-list">
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/elephas.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/maxpumperla/elephas" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Elephas
+                              </a>
+                              <p class="description">一个把深度学习框架keras衔接到Spark集群的第三方python包</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/FairScale.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/facebookresearch/fairscale" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                FairScale
+                              </a>
+                              <p class="description">一个用于高性能和大规模训练的PyTorch扩展库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/TensorFlowOnSpark.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/yahoo/TensorFlowOnSpark" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                TensorFlowOnSpark
+                              </a>
+                              <p class="description">可以在GPU和CPU服务器集群上实现分布式深度学习</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/sklearn.png"></div>
+                            <div class="contents">
+                              <a href="https://www.sklearncn.cn/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                sklearn
+                              </a>
+                              <p class="description">Python 编程语言的免费软件机器学习库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/deep_speed.png"></div>
+                            <div class="contents">
+                              <a href="https://www.deepspeed.ai/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                DeepSpeed
+                              </a>
+                              <p class="description">一个深度学习优化库，它使分布式训练变得容易</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/horovod.png"></div>
+                            <div class="contents">
+                              <a href="https://horovod.ai/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Horovod
+                              </a>
+                              <p class="description">一个分布式深度学习训练框架</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/Mesh TensorFlow.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/tensorflow/mesh" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Mesh TensorFlow
+                              </a>
+                              <p class="description">一种用于分布式深度学习的语言，能够指定广泛的分布式张量计算类别</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/bigdl.png"></div>
+                            <div class="contents">
+                              <a href="https://bigdl.readthedocs.io/en/latest/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                BigDL
+                              </a>
+                              <p class="description">Apache Spark的分布式深度学习库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/Analytics Zoo.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/intel-analytics/analytics-zoo" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Analytics Zoo
+                              </a>
+                              <p class="description">一个开源大数据 AI平台</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/petastorm.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/uber/petastorm" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Petastorm
+                              </a>
+                              <p class="description">Uber ATG开发的开源数据访问库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/apache_singa.png"></div>
+                            <div class="contents">
+                              <a href="http://singa.apache.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                Apache SINGA
+                              </a>
+                              <p class="description">专注于深度学习和机器学习模型的分布式训练的工具</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/shap.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/slundberg/shap" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                SHAP
+                              </a>
+                              <p class="description">使用Shapley值来解释任何机器学习模型的输出</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/lime.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/marcotcr/lime" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                LIME
+                              </a>
+                              <p class="description">一种解释机器学习模型的方法</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/shapash.png"></div>
+                            <div class="contents">
+                              <a href="https://shapash.readthedocs.io/en/latest/" class="website" target="_blank"
+                                rel="nofollow" style="color:#444">
+                                Shapash
+                              </a>
+                              <p class="description">一个用于描述 AI 模型的动态交互的库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/installation.png"></div>
+                            <div class="contents">
+                              <a href="https://interpret.ml/docs/getting-started" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                InterpretML
+                              </a>
+                              <p class="description">一个提供机器学习可解释性算法的开源Python包</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/eli5.png"></div>
+                            <div class="contents">
+                              <a href="https://eli5.readthedocs.io/en/latest/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                ELI5
+                              </a>
+                              <p class="description">一个帮助调试机器学习分类器的Python库</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/OmniXAI.png"></div>
+                            <div class="contents">
+                              <a href="https://github.com/salesforce/OmniXAI" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                OmniXAI
+                              </a>
+                              <p class="description">一个Python机器学习库，用于可解释AI（XAI）</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/pytorch.png"></div>
+                            <div class="contents">
+                              <a href="https://pytorch.org/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                pytorch
+                              </a>
+                              <p class="description">一个开源的Python机器学习库，用于图像识别</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="hot-item">
+                          <div class="item-card">
+                            <div class="icons"><img src="./static/img/python/intelligence/pyspark.png"></div>
+                            <div class="contents">
+                              <a href="https://spark.apache.org/docs/latest/api/python/" class="website" target="_blank" rel="nofollow"
+                                style="color:#444">
+                                pyspark
+                              </a>
+                              <p class="description">一个用Python编写的Spark库,用于使用Apache Spark功能运行Python应用程序</p>
+                            </div>
+                          </div>
+                        </li>
+            <li class="hot-item">
+                      <div class="item-card">
+                        <div class="icons"><img src="./static/img/python/intelligence/eli5.png"></div>
+                        <div class="contents">
+                          <a href="https://www.scipy.org/" class="website" target="_blank" rel="nofollow"
+                            style="color:#444">
+                            SciPy
+                          </a>
+                          <p class="description">SciPy 是一个开源的 Python 算法库和数学工具包</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="hot-item">
+                      <div class="item-card">
+                        <div class="icons"><img src="./static/img/python/intelligence/FairScale.png"></div>
+                        <div class="contents">
+                          <a href="https://www.scipy.org/" class="website" target="_blank" rel="nofollow"
+                            style="color:#444">
+                            XGBoost
+                          </a>
+                          <p class="description">XGBoost是一个优化的分布式梯度增强库，旨在实现高效，灵活和便携。</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="hot-item">
+                      <div class="item-card">
+                        <div class="icons"><img src="./static/img/python/intelligence/installation.png"></div>
+                        <div class="contents">
+                          <a href="lightgbm.readthedocs.io" class="website" target="_blank" rel="nofollow"
+                            style="color:#444">
+                            LightGBM
+                          </a>
+                          <p class="description">LightGBM（Light Gradient Boosting Machine） 是微软开源的一个实现 GBDT 算法的框架，支持高效率的并行训练。</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="hot-item">
+                      <div class="item-card">
+                        <div class="icons"><img src="./static/img/python/intelligence/FairScale.png"></div>
+                        <div class="contents">
+                          <a href="catboost.ai/" class="website" target="_blank" rel="nofollow"
+                            style="color:#444">
+                            CatBoost
+                          </a>
+                          <p class="description">CatBoost 是由 Yandex 的研究人员和工程师开发的基于梯度提升决策树的机器学习方法，现已开源。</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="hot-item">
+                      <div class="item-card">
+                        <div class="icons"><img src="./static/img/python/data/numpy.png"></div>
+                        <div class="contents">
+                          <a href="https://pypi.org/project/Theano" class="website" target="_blank" rel="nofollow"
+                            style="color:#444">
+                            Theano
+                          </a>
+                          <p class="description">Theano 是一个 Python 库，专门用于定义、优化、求值数学表达式，效率高，适用于多维数组。</p>
+                        </div>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <!--人工智能结束-->
+
+                <!--图像处理开始-->
+                <div class="indexbox fNAV 0" id="image" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">图像处理</strong>
+                  </div>
+                    <div id="catalog">
+                      <section data-catalog="download" class="active">
+                        <ul class="website-list">
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/Scikit-image_logo.png"></div>
+                              <div class="contents">
+                                <a href="https://scikit-image.org/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  scikit-image
+                                </a>
+                                <p class="description">使用Numpy数组为对象的图像处理Python包</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/numpy.png"></div>
+                              <div class="contents">
+                                <a href="https://numpy.org/doc/stable/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Numpy
+                                </a>
+                                <p class="description">Numpy是Python核心库之一，可用来加载并处理图像</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/matplotlib.svg"></div>
+                              <div class="contents">
+                                <a href="https://matplotlib.org/stable/index.html" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Numpy
+                                </a>
+                                <p class="description">Python 2D绘图库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/scipy.png"></div>
+                              <div class="contents">
+                                <a href="https://scipy.org/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Scipy
+                                </a>
+                                <p class="description">基于Numpy的科学计算库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/pillow.png"></div>
+                              <div class="contents">
+                                <a href="https://pillow.readthedocs.io/en/stable/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  PIL
+                                </a>
+                                <p class="description">基于Python的免费的图像处理库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/opencv.png"></div>
+                              <div class="contents">
+                                <a href="https://github.com/abidrahmank/OpenCV2-Python-Tutorials" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  OpenCV-Python
+                                </a>
+                                <p class="description">OpenCV的python版API</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/simplecv.png"></div>
+                              <div class="contents">
+                                <a href="https://simplecv.readthedocs.io/en/latest/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  SimpleCV
+                                </a>
+                                <p class="description">构建计算机视觉应用程序的开源框架</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/simplecv.png"></div>
+                              <div class="contents">
+                                <a href="https://mahotas.readthedocs.io/en/latest/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Mahotas
+                                </a>
+                                <p class="description">用于Python的计算机视觉和图像处理库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/Simpleitk.png"></div>
+                              <div class="contents">
+                                <a href="https://simpleitk.readthedocs.io/en/master/gettingStarted.html#python-binary-files" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  simpleitk
+                                </a>
+                                <p class="description">图像分析工具包，支持Python接口</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/graphicsmagick.png"></div>
+                              <div class="contents">
+                                <a href="https://pgmagick.readthedocs.io/en/latest/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Pgmagick
+                                </a>
+                                <p class="description">GraphicsMagick库的基于Python的包装器</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/pycairo.svg"></div>
+                              <div class="contents">
+                                <a href="https://pycairo.readthedocs.io/en/latest/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Pycairo
+                                </a>
+                                <p class="description">绘制矢量图形cairo的python绑定</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/pyecharts.png"></div>
+                              <div class="contents">
+                                <a href="https://github.com/pyecharts/pyecharts" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  pyecharts
+                                </a>
+                                <p class="description">支持可视化绘图库ECharts的Python接口</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/image/PyG2Plot.png"></div>
+                              <div class="contents">
+                                <a href="https://github.com/hustcc/PyG2Plot" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  PyG2Plot
+                                </a>
+                                <p class="description">基于G2Plot封装的Python可视化工具库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </section>
+                    </div>
+                  </div>
+                  <!--图像处理结束-->
+
+                <!--游戏开发开始-->
+                <div class="indexbox fNAV 0" id="game" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">游戏开发</strong>
+                  </div>
+                    <div id="catalog">
+                      <section data-catalog="download" class="active">
+                        <ul class="website-list">
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/pygame.png"></div>
+                              <div class="contents">
+                                <a href="https://www.pygame.org/docs/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Pygame
+                                </a>
+                                <p class="description">开发视频游戏的Python程序模块</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/cocos2d.png"></div>
+                              <div class="contents">
+                                <a href="https://www.cocos.com/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Cocos2d
+                                </a>
+                                <p class="description">构建2D游戏、演示和其他图形/交互式应用程序的框架</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/pysoy.png"></div>
+                              <div class="contents">
+                                <a href="https://pypi.org/project/PySoy/Trunk/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  PySoy
+                                </a>
+                                <p class="description">适用于Python的3D游戏引擎</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/pyorge.png"></div>
+                              <div class="contents">
+                                <a href="https://wiki.ogre3d.org/PyOgre" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  PyOgre
+                                </a>
+                                <p class="description">OGRE(面向场景的3D引擎)的python绑定</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/Pyglet_logo.png"></div>
+                              <div class="contents">
+                                <a href="https://pyglet.org/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Pyglet
+                                </a>
+                                <p class="description">用于开发游戏的Python的跨平台窗口和多媒体库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/Panda3D_Logo.png"></div>
+                              <div class="contents">
+                                <a href="https://www.panda3d.org/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Panda3D
+                                </a>
+                                <p class="description">支持Python的现代3D引擎程序库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/Blender.png"></div>
+                              <div class="contents">
+                                <a href="https://docs.blender.org/api/current/info_quickstart.html" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Blender
+                                </a>
+                                <p class="description">免费的开源3D创作套件</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/fife.png"></div>
+                              <div class="contents">
+                                <a href="https://github.com/fifengine/python-tutorials" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Fifengine
+                                </a>
+                                <p class="description">多平台等距游戏引擎，支持Python接口绑定</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/arcade-logo.svg"></div>
+                              <div class="contents">
+                                <a href="https://api.arcade.academy/en/latest/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Arcade
+                                </a>
+                                <p class="description">用于创建2D视频游戏的易学Python库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/pyirrlicht.png"></div>
+                              <div class="contents">
+                                <a href="https://sourceforge.net/projects/pir/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  pyirrlicht
+                                </a>
+                                <p class="description">irrlicht引擎的python包装器，用于2d/3d游戏和图形</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/pydark.png"></div>
+                              <div class="contents">
+                                <a href="https://github.com/SirFroweey/PyDark" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  pyDark
+                                </a>
+                                <p class="description">Python和PyGame之上编写的2D在线多人视频游戏框架</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/armory.png"></div>
+                              <div class="contents">
+                                <a href="https://armory3d.org/index.html" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Armory
+                                </a>
+                                <p class="description">具有完整的Blender集成的开源3D游戏引擎</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/pycap.png"></div>
+                              <div class="contents">
+                                <a href="http://www.farbs.org/pycap.html" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Pycap
+                                </a>
+                                <p class="description">超级友好的2D游戏框架，无需其他编译器</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/pilas.ico"></div>
+                              <div class="contents">
+                                <a href="https://www.pilas-engine.com.ar/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Pilas
+                                </a>
+                                <p class="description">适合初学者的游戏开发工具</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/scut.ico"></div>
+                              <div class="contents">
+                                <a href="https://github.com/ScutGame/Scut" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Scut
+                                </a>
+                                <p class="description">免费开源的游戏服务器框架，支持C#/Python/Lua脚本</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/SDL2.ico"></div>
+                              <div class="contents">
+                                <a href="https://github.com/py-sdl/py-sdl2" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  PYSDL2
+                                </a>
+                                <p class="description">免费开源的游戏服务器框架，支持C#/Python/Lua脚本</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/fabula.ico"></div>
+                              <div class="contents">
+                                <a href="https://github.com/flberger/fabula" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  fabula
+                                </a>
+                                <p class="description">开源的Python游戏引擎，适合冒险、角色扮演和战略游戏</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/game/Cyphesis.ico"></div>
+                              <div class="contents">
+                                <a href="https://github.com/worldforge/cyphesis" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Cyphesis
+                                </a>
+                                <p class="description">使用AI/A-Life技术的MMORPG游戏以及NPC（非玩家控制人物）服务器引擎</p>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </section>
+                    </div>
+                  </div>
+                  <!--游戏开发结束-->
+
+                <!--图形界面开始-->
+                <div class="indexbox fNAV 0" id="gui" style="position:relative">
+                  <div class="indexbox_title"><strong style="font-weight: bold !important;">图形界面</strong>
+                  </div>
+                    <div id="catalog">
+                      <section data-catalog="download" class="active">
+                        <ul class="website-list">
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/gui/PyQt.svg.png"></div>
+                              <div class="contents">
+                                <a href="https://scikit-image.org/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  PyQt5
+                                </a>
+                                <p class="description">Qt框架的Python语言实现</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/gui/tkinter.png"></div>
+                              <div class="contents">
+                                <a href="https://scikit-image.org/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Tkinter
+                                </a>
+                                <p class="description">Python的标准Tk GUI工具包的接口</p>
+                              </div>
+                            </div>
+                          </li>
+
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/gui/Kivy_logo.png"></div>
+                              <div class="contents">
+                                <a href="https://scikit-image.org/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Kivy
+                                </a>
+                                <p class="description">基于Python编写的类似安卓界面风格的界面库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/gui/wxpython.png"></div>
+                              <div class="contents">
+                                <a href="https://www.wxpython.org/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  wxPython
+                                </a>
+                                <p class="description">用于wxWidgets的Python包装器</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/gui/PySimpleGUI_logo.png"></div>
+                              <div class="contents">
+                                <a href="https://www.pysimplegui.org/en/latest/" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  PySimpleGUI
+                                </a>
+                                <p class="description">用于开发图形界面的Python GUI框架</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/gui/Libavg.ico"></div>
+                              <div class="contents">
+                                <a href="https://github.com/libavg/libavg" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Libavg
+                                </a>
+                                <p class="description">构建触摸屏界面的Python库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="hot-item">
+                            <div class="item-card">
+                              <div class="icons"><img src="./static/img/python/gui/Libavg.ico"></div>
+                              <div class="contents">
+                                <a href="https://github.com/libavg/libavg" class="website" target="_blank" rel="nofollow"
+                                  style="color:#444">
+                                  Libavg
+                                </a>
+                                <p class="description">构建触摸屏界面的Python库</p>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </section>
+                    </div>
+                  </div>
+                  <!--图形界面结束-->
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </main>
+
+
+  <footer class="text-muted small bg-dark py-4 mt-3 d-none d-lg-block" id="footer"
+    style="background:#222c3c !important">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <div class="">
+            <div class="footer-new">
+              <div class="about" style="width: 20%;">
+                <img src="./static/img/logo.png" alt="程序员一站式导航" style="width: 100%; height: auto;" />
+              </div>
+              <div class="about" style="width: 444px;">
+                <h2>关于</h2>
+                <div class="text">
+                  CXY521 专注程序员一站式导航，提供最精华有趣的内容&nbsp;。 本站仅为网址导航，网站来源于网络，对其内容不负任何责任，若有问题，请联系我们。
+                </div>
+              </div>
+              <div class="about" style="width: 100px;">
+                <h2>友情链接</h2>
+                <div class="text">
+                  <p><a href="https://www.24kdh.com/" target="_blank" style="color:#eee">24K导航</a></p>
+                  <p><a href="http://www.buhuixiao.com/" target="_blank" style="color:#eee">不会笑青年</a></p>
+                  <p><a href="http://www.ityouknow.com/" target="_blank" style="color:#eee">纯洁的微笑</a></p>
+                  <!-- <p><a href="/about" target="_blank">关于我们</a></p>
+                              <p><a href="contact" target="_blank">联系我们</a></p> -->
+                </div>
+              </div>
+              <div class="about">
+                <h2>公众号
+                  <!-- &amp;小程序 -->
+                </h2>
+                <div class="">
+                  <div class="text">
+                    <div class="" id="t1" style="">
+                      <p><img src="./static/img/wechat/erweima.jpg" class="appdown" style="width:108px;height:108px">
+                      </p>
+                      <p style="padding-bottom: 0;">回复521进群摸鱼</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="qrmain">
+                              <div class="qrbox">
+                                  <div class="qrcodepos" id="t1" style="">
+                                      <div><img src="./static/img/wechat/laughyouth.jpg" class="appdown" style="width:108px;height:108px">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> -->
+              </div>
+              <!-- <div class="about" style="text-align: center; width: 200px;">
+                          <h2>程序员摸鱼群</h2>
+                          <div class="text">
+                              <p style="">
+                                <img src="./static/img/wechat/laughyouth.jpg"" class="appdown" style="width:108px;height:108px;margin-top: 13px">
+                              </p>
+                          </div>
+                          <p style="">回复521开启摸鱼</p>
+                      </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div style="background: #2b374c;color:#818394;padding:12px;font-size:12px;" class="d-none  d-lg-block" id="footer">
+    <div class="container">
+      <!-- <div class="footer_btnbox">
+          <div class="botton-footer active" data="-1">Copyright</div>
+          <div class="botton-footer" data="0">友情链接</div>
+      </div> -->
+      <div align="left" id="yqlinks-cate-00" class=" links-box" style="">
+        Copyright © 2021-2022 &nbsp; &nbsp;
+        <a href="http://www.cxy521.com">
+          <span style="color: #868e96;">程序员一站式导航</span>
+        </a>&nbsp; &nbsp;
+        <a href="http://beian.miit.gov.cn">
+          <span style="color: #868e96;">京ICP备15067287号-4</span>
+        </a>&nbsp; &nbsp; 声明：网站上的服务均为第三方提供，与CXY521无关。请用户注意甄别服务质量，避免上当受骗。
+      </div>
+      <!-- <div class="time_content  links-box" style="display: none;" id="yqlinks-cate-0">
+          <div style="line-height: 20px;">
+              友情链接：&nbsp;
+               <a href="https://www.24kdh.com/" target="_blank" style="color:#eee">24K导航</a>&nbsp; &nbsp;
+               <a href="http://laughyouth.com/" target="_blank" style="color:#eee">不会笑青年</a>&nbsp; &nbsp;
+               <a href="http://www.ityouknow.com/" target="_blank" style="color:#eee">纯洁的微笑</a>&nbsp; &nbsp;
+          </div>
+      </div> -->
+    </div>
+  </div>
+
+
+  <div class="wx-public-container">
+    <div class="wx-public-dialog" style="z-index: 2009;">
+      <div class="el-dialog" style="display: none;">
+        <div class="el-dialog__header">
+          <span class="el-dialog__title"></span>
+        </div>
+        <div class="el-dialog__body">
+          <div class="top">
+            <p>扫码关注公众号</p>
+          </div>
+          <div class="qrcode">
+            <!-- <img src="./static/img/wechat/laughyouth.jpg" alt="不会笑青年公众号"> -->
+            <img src="./static/img/wechat/erweima.jpg" alt="程序员指南公众号">
+          </div>
+          <div class="wx-name">
+            <span class="icon"></span>
+            <span>关注后回复：521，进群交流</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="./static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./static/js/tipso.min.js"></script>
+  <script type="text/javascript" src="./static/js/index.js"></script>
+  <script type="text/javascript" src="./static/js/girls/bootstrap.min.js"></script>
+
+
+  <div style="display: none;">
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?195b6796d001b750b1bf8e507b220b98";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </div>
+</body>
+
+</html>
